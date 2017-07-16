@@ -152,7 +152,7 @@ def production():
   )
 
   _deploy_base_env()
-  fab.env.hosts = ['?????']
+  fab.env.hosts = ['janchristlieb']
 
 @fab.task
 def staging():
