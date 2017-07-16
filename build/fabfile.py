@@ -115,11 +115,14 @@ def _deploy_git_factory():
   class GitFilter(fabdeploit.GitFilter):
     def filter(self):
       for obj in self.filtered_tree:
-        if obj.path not in ('web',):
+        if obj.path not in ('web','config'):
           self.remove(obj.name)
 
       #fab.execute(css)
       for filename in (
+        'web/app/themes/jc-theme/dist',
+        'vendor'
+        'web/wp'
       ):
         if os.path.exists(os.path.join(self.repo.working_tree_dir, filename)):
           self.add(filename)
