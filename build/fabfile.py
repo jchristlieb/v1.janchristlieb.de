@@ -121,7 +121,7 @@ def _deploy_git_factory():
       #fab.execute(css)
       for filename in (
         'web/app/themes/jc-theme/dist',
-        'vendor'
+        'vendor',
         'web/wp'
       ):
         if os.path.exists(os.path.join(self.repo.working_tree_dir, filename)):

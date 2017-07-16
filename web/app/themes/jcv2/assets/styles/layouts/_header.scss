@@ -1,0 +1,50 @@
+.nav-bg-default {
+  background-color: transparent;
+}
+
+.nav-bg-scroll {
+  background-color: $main-color;
+  -webkit-box-shadow: 0 1px 60px -5px $main-color;
+  -moz-box-shadow: 0 1px 60px -5px $main-color;
+  box-shadow: 0 1px 60px -5px $main-color;
+}
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      color: $text-color;
+      border-bottom: 2px solid transparent;
+      border-top: 2px solid transparent;
+      &:hover {
+        color: $text-color;
+        border-bottom: 2px solid $highlight-color-lighter;
+        border-top: 2px solid $highlight-color-lighter;
+      }
+      &:active {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+  color: $text-color;
+}
+
+
+.nav-img {
+  max-height: 50px;
+  margin: 12px 0;
+}
+
+.navbar-light .navbar-toggler {
+  margin: 15px;
+}
+
+// fixes the overlapping of navbar within a container
+@include media-breakpoint-down(xs) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

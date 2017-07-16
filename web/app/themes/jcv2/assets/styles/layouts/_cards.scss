@@ -1,0 +1,28 @@
+
+  .card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    background: $body-color;
+    border-radius: 5px;
+    margin: 25px 0;
+    .card-top {
+      overflow: hidden;
+      background-color: $main-color;
+      height: 120px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    .card-image {
+      width: 120px;
+      margin: -65px auto 0;
+      background: $body-color;
+      border: 15px solid $body-color;
+      border-radius: 20%;
+    }
+    &:hover {
+        box-shadow: 0 0 20px rgba(0,0,0,.35);
+      }
+    }
+
+
+
+

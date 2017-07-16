@@ -1,0 +1,64 @@
+body {
+  background-color: $body-color;
+  position: relative;
+}
+
+section {
+  padding: 20px;
+  .anchor {
+    padding-top: 150px;
+    margin-top: -150px;
+  }
+}
+
+section.welcome {
+  display: flex;
+  align-items: center;
+  background-color: $main-color;
+  height: calc(100vh - 0px);
+  position: relative;
+  .lets-talk {
+    position: relative;
+    &:after {
+      font-family: FontAwesome;
+      content: "\f0e6";
+      position: absolute;
+      margin-left: 5px;
+    }
+  }
+}
+
+section.teasers {
+  padding: 100px 50px;
+}
+
+section.testimonials {
+  padding: 100px 50px;
+}
+
+section.contact {
+  padding: 100px 50px;
+}
+
+section.site-intro {
+  padding-top: 50px;
+  .divider {
+    position: relative;
+    width: 5%;
+    border-bottom: 5px solid $main-color;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+section.content {
+  .content-item {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+}
+
+
+
+
+

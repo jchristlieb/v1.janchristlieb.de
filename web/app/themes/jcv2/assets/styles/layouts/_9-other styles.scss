@@ -1,0 +1,28 @@
+body#tinymce {
+  margin: 12px !important;
+}
+
+.main {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.divider {
+  position: relative;
+  width: 10%;
+  border-bottom: 3px solid $main-color;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.divider-fp {
+  position: relative;
+  left: 45%;
+  width: 10%;
+  border-bottom: 3px solid $highlight-color-var;
+  margin: 30px 0 30px 0;
+}
+
+
+
+

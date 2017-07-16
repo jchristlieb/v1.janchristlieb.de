@@ -1,0 +1,74 @@
+.btn-primary {
+  color: $main-color;
+  background-color: $body-color;
+  border: 2px solid $main-color;
+  border-radius: 5px;
+  &:hover {
+    color: $main-color-darker;
+    background-color: $highlight-color;
+    border-color: $main-color-darker;
+  }
+  &:active {
+    color: $highlight-color-var;
+    background-color: $main-color;
+    border-color: $main-color;
+  }
+}
+
+
+.btn-round {
+  display: block;
+  color: $main-color;
+  background: $highlight-color;
+  border: 3px solid $main-color;
+  border-radius: 50%;
+  width: 64px;
+  max-width: 64px;
+  min-width: 64px;
+  height: 64px;
+  max-height: 64px;
+  min-height: 64px;
+  padding: 0;
+  &:hover {
+    border-color: $main-color-darker;
+    background: $highlight-color-darker;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .btn-round {
+    width: 50px;
+    max-width: 50px;
+    min-width: 50px;
+    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
+  }
+}
+
+#qa-btn, #toc-btn {
+  position: fixed;
+  right: 10px;
+  z-index: 99;
+}
+
+#qa-btn {
+  bottom: 20px;
+}
+
+#toc-btn {
+  bottom: 90px;
+}
+
+.fixed-qa-button, .fixed-up-button {
+  position: absolute!important;
+  top:auto;
+}
+
+.fixed-qa-button {
+  bottom:10px!important;
+}
+
+.fixed-up-button{
+  bottom: 85px!important;
+}

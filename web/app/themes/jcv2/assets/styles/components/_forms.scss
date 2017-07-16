@@ -1,0 +1,18 @@
+.wpcf7-form-control:not(.wpcf7-submit):not(.wpcf7-range):not(.wpcf7-checkbox):not(.wpcf7-radio):not(.wpcf7-acceptance):not(.wpcf7-file) {
+  @extend .form-control;
+}
+
+.wpcf7-submit, .wpcf7-form-control {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+.form-control {
+  border: 2px solid $main-color-darker;
+  margin-bottom: 20px;
+}
+
+
+.contact-form {
+  padding-top: 25px;
+}

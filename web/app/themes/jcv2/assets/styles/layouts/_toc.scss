@@ -1,0 +1,52 @@
+.toc {
+  z-index: 999;
+  position: relative;
+  h3 {
+    color: $text-color;
+    margin-bottom: 0;
+  }
+  h4 {
+    color: $text-color-var;
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+  a {
+    color: $text-color-var;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    border: 2px solid $main-color;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  li {
+    background: transparent;
+    padding: 20px 15px;
+    border-bottom: 1px dotted $main-color-lighter;
+  }
+  li:hover {
+    background: $highlight-color;
+  }
+  .card-header {
+    background: $main-color;
+    padding: 15px;
+  }
+  .toc-menu {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .toc-item:before {
+      content: "\f0a9";
+      font-family: FontAwesome;
+      display: inline-block;
+      width: 1.3em;
+  }
+}
+
+
+
+
+
+

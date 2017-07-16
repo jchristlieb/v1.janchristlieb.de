@@ -1,0 +1,50 @@
+
+.carousel {
+  background-color: $body-color;
+  border-radius: 20px;
+}
+
+.carousel-item {
+  height: 150px;
+}
+
+.blockquote {
+  border-left: none;
+  margin-left: 10%;
+  position: relative;
+  max-width: 95%;
+  .footer {
+    margin-left: 27px;
+    font-size: .8em;
+  }
+  &:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    color: $highlight-color-var;
+    position: absolute;
+  }
+  p{
+    padding-left: 30px;
+  }
+}
+
+
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+.carousel-control-prev:active,
+.carousel-control-next:active,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  color: $main-color;
+}
+
+@media (max-width: 575px) {
+  .blockquote {
+    font-size: .8em;
+  }
+  .carousel {
+    margin: 0px;
+  }
+}
