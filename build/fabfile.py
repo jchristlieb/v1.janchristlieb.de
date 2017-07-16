@@ -121,6 +121,7 @@ def _deploy_git_factory():
       #fab.execute(css)
       for filename in (
         'web/app/themes/jc-theme/dist',
+        'web/app/plugins',
         'vendor',
         'web/wp'
       ):
