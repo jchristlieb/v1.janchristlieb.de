@@ -1,12 +1,21 @@
+#anchor-nav {
+  padding-top: 20px;
+  margin-top: -20px;
+}
+
+.navbar {
+  padding: 0;
+}
+
 .nav-bg-default {
   background-color: transparent;
 }
 
 .nav-bg-scroll {
   background-color: $main-color;
-  -webkit-box-shadow: 0 1px 60px -5px $main-color;
-  -moz-box-shadow: 0 1px 60px -5px $main-color;
-  box-shadow: 0 1px 60px -5px $main-color;
+  -webkit-box-shadow: 0 2px 20px -5px $main-color;
+  -moz-box-shadow: 0 2px 20px -5px $main-color;
+  box-shadow: 0 2px 20px -5px $main-color;
 }
 
 .navbar-light {

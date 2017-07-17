@@ -1,11 +1,12 @@
 
 .footer-social {
   background: $main-color;
-  box-shadow: 0 10px 40px -5px $main-color-darker;
+  box-shadow: 0 2px 20px -5px $main-color-darker;
 }
 
 .footer-legal {
   background: $main-color-darker;
+  box-shadow: 0 2px 20px -5px $main-color-darker;
   padding: 10px;
 }
 
@@ -63,5 +64,6 @@
 
 footer {
   margin: 0;
-  background-color: $highlight-color;
+  background-color: $body-color-darker;
+  padding-bottom: 75px;
 }

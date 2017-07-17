@@ -1,6 +1,12 @@
 body {
-  background-color: $body-color;
+  background-color: $body-color-darker;
   position: relative;
+}
+
+.container.color {
+  background-color: $body-color;
+  box-shadow: 0 0 4px rgba(0,0,0,.13);
+  padding: 0;
 }
 
 section {
@@ -29,7 +35,7 @@ section.welcome {
 }
 
 section.teasers {
-  padding: 100px 50px;
+  padding: 150px 50px 100px 50px;
 }
 
 section.testimonials {
@@ -41,7 +47,7 @@ section.contact {
 }
 
 section.site-intro {
-  padding-top: 50px;
+  margin-top: -5%;
   .divider {
     position: relative;
     width: 5%;

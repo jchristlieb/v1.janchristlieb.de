@@ -43,7 +43,7 @@
 
                 // Navbar color change
                 var nav_position = $('#site-intro').offset();
-                var navbar = $('nav.navbar');
+                var navbar = $('div.nav-bg-default');
 
 
                 $(document).scroll(function () {
@@ -64,18 +64,6 @@
             },
             finalize: function () {
                 // JavaScript to be fired on the home page, after the init JS
-
-                var navbar = $('nav.navbar');
-
-                $(window).scroll(function () {
-                    if($(window).scrollTop() >= 30){
-                        navbar.addClass('nav-bg-scroll');
-                    }
-                    else {
-                        navbar.remove('nav-bg-scroll');
-                    }
-                });
-
 
                 function printGreeting(id, sentence, speed) {
                     var index = 0,
