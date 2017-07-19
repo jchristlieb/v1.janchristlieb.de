@@ -16,18 +16,19 @@
 }
 
 
-.btn-round {
+.btn-side-kick {
   display: block;
   color: $main-color;
   background: $highlight-color;
-  border: 3px solid $main-color;
-  border-radius: 50%;
-  width: 64px;
-  max-width: 64px;
-  min-width: 64px;
-  height: 64px;
-  max-height: 64px;
-  min-height: 64px;
+  border: 2px solid $main-color;
+  border-right: 0;
+  border-radius: 15px 0 0 15px;
+  width: 55px;
+  max-width: 55px;
+  min-width: 55px;
+  height: 55px;
+  max-height: 55px;
+  min-height: 55px;
   padding: 0;
   &:hover {
     border-color: $main-color-darker;
@@ -36,7 +37,7 @@
 }
 
 @media screen and (max-width: 575px) {
-  .btn-round {
+  .btn-side-kick {
     width: 50px;
     max-width: 50px;
     min-width: 50px;
@@ -48,16 +49,16 @@
 
 #qa-btn, #toc-btn {
   position: fixed;
-  right: 10px;
+  right: 0;
   z-index: 99;
 }
 
 #qa-btn {
-  bottom: 20px;
+  bottom: 50%;
 }
 
 #toc-btn {
-  bottom: 90px;
+  bottom: 43%;
 }
 
 .fixed-qa-button, .fixed-up-button {

@@ -1,4 +1,4 @@
-<button type="button" class="btn btn-round" id="toc-btn" data-toggle="tooltip" data-placement="left"
+<button type="button" class="btn-side-kick" id="toc-btn" data-toggle="tooltip" data-placement="left"
         title="Zur Übersicht"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
 </button>
 

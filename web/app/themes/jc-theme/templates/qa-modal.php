@@ -1,4 +1,4 @@
-<button type="button" class="btn btn-round custom-tooltip" id="qa-btn" data-toggle="tooltip" data-placement="left" title="Lass uns reden"><i class="fa fa-commenting-o fa-2x" aria-hidden="true"
+<button type="button" class="btn-side-kick custom-tooltip" id="qa-btn" data-toggle="tooltip" data-placement="left" title="Lass uns reden"><i class="fa fa-commenting-o fa-2x" aria-hidden="true"
                                                            data-toggle="modal" data-target="#qa-modal"></i>
 </button>
 

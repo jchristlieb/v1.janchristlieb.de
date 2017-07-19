@@ -6,22 +6,8 @@
 
 <?php
 get_template_part('templates/site-intro');
+get_template_part('templates/qa-modal');
 ?>
-
-<section class="quote">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
-                <blockquote class="blockquote justify-content-center align-middle">
-                    <p class="quote"><?php echo get_field('quote'); ?></p>
-                    <div class="footer">
-                        <p class="author"><?php echo get_field('author'); ?></p>
-                    </div>
-                </blockquote>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="content">
     <div class="container">

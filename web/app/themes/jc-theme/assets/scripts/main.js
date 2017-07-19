@@ -31,16 +31,6 @@
                 });
 
 
-                // Stop the qa-button before footer
-                $(window).scroll(function() {
-                    $("#qa-btn").removeClass("fixed-qa-button");
-                    if($(window).scrollTop() + $(window).height() > ($(document).height() - 130) ) {
-                        //you are at bottom
-                        $("#qa-btn").addClass("fixed-qa-button");
-                    }
-                });
-
-
                 // Navbar color change
                 var nav_position = $('#site-intro').offset();
                 var navbar = $('div.nav-bg-default');
@@ -106,8 +96,6 @@
                             // Store hash
                             var hash = this.hash;
 
-                            // Using jQuery's animate() method to add smooth page scroll
-                            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                             $('html, body').animate({
                                 scrollTop: $(hash).offset().top
                             }, 400, function(){
@@ -136,15 +124,6 @@
                     $('html, body').animate({
                         scrollTop: $("#toc").offset().top
                     }, 400);
-                });
-
-                // Stop the back-to-toc-button before footer
-                $(window).scroll(function() {
-                    $("#toc-btn").removeClass("fixed-up-button");
-                    if($(window).scrollTop() + $(window).height() > ($(document).height() - 130) ) {
-                        //you are at bottom
-                        $("#toc-btn").addClass("fixed-up-button");
-                    }
                 });
 
 
