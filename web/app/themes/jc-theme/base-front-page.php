@@ -29,7 +29,7 @@ use Roots\Sage\Wrapper;
             $image_alt = $image_object['alt'];
             ?>
 
-            <div class="container" id="anchor-nav">
+            <div class="container" id="#site-intro">
                 <div class="row">
                     <div class="d-md-inline-flex justify-content-center col-sm-3">
                         <img class=" greeting-image rounded-circle img-fluid" src="<?php echo $image ?>"

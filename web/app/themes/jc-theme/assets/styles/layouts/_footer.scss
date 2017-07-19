@@ -49,21 +49,21 @@
   }
 }
 
-
-@media (max-width: 575px) {
-  footer .copyright {
-    text-align:center;
-  }
-}
-
-@media (max-width: 575px) {
-  footer .social-icons {
-    float: inherit;
-  }
-}
-
 footer {
   margin: 0;
   background-color: $body-color-darker;
   padding-bottom: 75px;
 }
+
+@media (max-width: 575px) {
+  footer {
+    padding-bottom: 0;
+  }
+  footer .social-icons {
+    float: inherit;
+  }
+  footer .copyright {
+    text-align:center;
+  }
+}
+

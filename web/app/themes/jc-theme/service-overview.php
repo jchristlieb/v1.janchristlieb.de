@@ -12,36 +12,37 @@
         <div class="container">
             <div class="row">
 
-                <?php if (have_rows('image_card')) :
+                <?php if (have_rows('icon_card')) :
 
-                while (have_rows('image_card')) : the_row(); ?>
+                    while (have_rows('icon_card')) : the_row(); ?>
 
 
-                    <?php
-                    $image_object = get_sub_field('image');
-                    $image_size = "360x360";
-                    $image = $image_object['sizes'][$image_size];
-                    $image_title = $image_object['title'];
-                    $image_alt = $image_object['alt'];
-                    ?>
+                        <?php
+                        $icon_object = get_sub_field('icon');
+                        $icon_size = "85x85";
+                        $icon = $icon_object['sizes'][$icon_size];
+                        $icon_title = $icon_object['title'];
+                        $icon_alt = $icon_object['alt'];
+                        ?>
 
-                    <div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0">
-                        <article class="card">
-                            <div class="card-block">
-                                <h3 class="card-title"><?php the_sub_field('card_title') ?></h3>
-                                <h6 class="text-muted"><?php the_sub_field('card_subtitle') ?></h6>
-                            </div>
-                            <img class="img-responsive" src="<?php echo $image; ?>"
-                                 title="<?php echo $image_title; ?>" alt="<?php echo $image_alt; ?>"/>
-                            <div class="card-block">
-                                <p class="card-text"><?php the_sub_field('card_body') ?></p>
-                                <a href="<?php the_sub_field('button_link') ?>"
-                                   class="btn btn-primary"><?php the_sub_field('card_button') ?></a>
-                            </div>
-                        </article>
-                    </div>
+                        <div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0">
+                            <a href="<?php the_sub_field('card_link') ?>">
+                                <div class="card">
+                                    <div class="card-top">
+                                    </div>
+                                    <img class="card-image" src="<?php echo $icon ?>"
+                                         title="<?php echo $icon_title ?>"
+                                         alt="<?php echo $icon_alt ?>">
+                                    <div class="card-block">
+                                        <h3 class="card-title text-center"><?php the_sub_field('card_title') ?></h3>
+                                        <hr class="card-hr">
+                                        <p class="card-text"><?php the_sub_field('card_body') ?></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
-                <?php endwhile ?>
+                    <?php endwhile ?>
                 <?php endif; ?>
 
             </div>

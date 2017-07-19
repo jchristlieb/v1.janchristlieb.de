@@ -5,7 +5,7 @@ body {
 
 .container.color {
   background-color: $body-color;
-  box-shadow: 0 0 4px rgba(0,0,0,.13);
+  box-shadow: 0 0 4px rgba(0, 0, 0, .13);
   padding: 0;
 }
 
@@ -61,6 +61,17 @@ section.content {
   .content-item {
     margin-top: 25px;
     margin-bottom: 50px;
+  }
+  .content-block-b {
+    white-space: nowrap;
+    img {
+      display: inline;
+    }
+    h2 {
+      display: inline;
+      white-space: nowrap;
+      margin: 0 0 0 10px;
+    }
   }
 }
 

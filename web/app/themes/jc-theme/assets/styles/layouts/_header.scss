@@ -50,6 +50,13 @@
   margin: 15px;
 }
 
+@media screen and (max-width: 767px){
+  .navbar-nav {
+    background: $main-color;
+    padding: 20px 35px;
+  }
+}
+
 // fixes the overlapping of navbar within a container
 @include media-breakpoint-down(xs) {
   .container {

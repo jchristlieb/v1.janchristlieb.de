@@ -14,10 +14,10 @@ get_template_part('templates/qa-modal');
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <?php if (have_rows('offers')): ?>
+                <?php if (have_rows('content_block_a')): ?>
                     <?php $i = 0; ?>
 
-                    <?php while (have_rows('offers')) : the_row(); ?>
+                    <?php while (have_rows('content_block_a')) : the_row(); ?>
                         <?php $i++ ?>
                         <div class="row content-item">
                             <div class="col-md-8<?php if ($i % 2 == 0) echo ' push-md-4' ?>">
@@ -35,7 +35,7 @@ get_template_part('templates/qa-modal');
                             ?>
 
                             <div class="col-md-4 d-inline-flex justify-content-center<?php if ($i % 2 == 0) echo ' pull-md-8' ?>">
-                                <img class="img-responsive" src="<?php echo $image; ?>"
+                                <img class="img-fluid" src="<?php echo $image; ?>"
                                      alt="<?php echo $image_alt; ?>"
                                      title="<?php echo $image_title; ?>"/>
                             </div>

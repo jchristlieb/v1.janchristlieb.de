@@ -48,6 +48,7 @@ function setup()
     add_image_size('800x450', 800, 450);
     add_image_size('150x150', 150, 150);
     add_image_size('85x85', 85, 85);
+    add_image_size('50x50', 50, 50);
 
     // Enable post formats
     // http://codex.wordpress.org/Post_Formats
@@ -134,6 +135,7 @@ function display_sidebar()
         is_page_template('service-page.php'),
         is_page_template('service-overview.php'),
         is_page_template('portfolio.php'),
+        is_page_template('about.php'),
     ]);
 
     return apply_filters('sage/display_sidebar', $display);
