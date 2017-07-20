@@ -132,10 +132,10 @@ function display_sidebar()
         is_404(),
         is_front_page(),
         is_page_template('template-custom.php'),
-        is_page_template('service-page.php'),
-        is_page_template('service-overview.php'),
-        is_page_template('portfolio.php'),
-        is_page_template('about.php'),
+        is_page_template('template-service-page.php'),
+        is_page_template('template-service-overview.php'),
+        is_page_template('template-portfolio.php'),
+        is_page_template('template-default-content.php'),
     ]);
 
     return apply_filters('sage/display_sidebar', $display);

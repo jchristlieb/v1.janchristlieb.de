@@ -30,6 +30,25 @@
                     $('[data-toggle="tooltip"]').tooltip();
                 });
 
+                var navbar = $('div.nav-bg-default');
+
+                $("button.navbar-toggler ").click(function(){
+                    navbar.addClass("nav-bg-scroll");
+                });
+
+                // If hover on .dropdown add .highlight to parent menu item
+                $(document).ready(function(){
+                    $(".dropdown").hover(
+                        function() {
+                            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+                            $(this).toggleClass('highlight');
+                        },
+                        function() {
+                            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+                            $(this).toggleClass('highlight');
+                        }
+                    );
+                });
 
                 // Navbar color change
                 var nav_position = $('#site-intro').offset();

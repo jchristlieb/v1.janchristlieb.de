@@ -115,9 +115,11 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
                 $atts['class']			= 'nav-link';
                 if ( $args->has_children ){
                     $classes[] = ' dropdown';
-                    $atts['href']   		= '#';
-                    $atts['data-toggle']	= 'dropdown';
-                    $atts['class']			= 'dropdown-toggle nav-link';
+                    //$atts['href']   		= '#';
+                    $atts['href']   		= ( $item->url );
+                    $atts['data-hover']	= 'dropdown';
+                    $atts['class']			= 'nav-link';
+                    //$atts['class']			= 'dropdown-toggle nav-link';
                     $atts['role']	= 'button';
                     $atts['aria-haspopup']	= 'true';
                 }

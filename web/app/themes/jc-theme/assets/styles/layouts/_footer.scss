@@ -25,7 +25,7 @@
   }
   a {
     color: $body-color;
-    text-decoration: underline;
+    text-decoration: none;
     &:hover {
       color: $highlight-color-lighter;
     }

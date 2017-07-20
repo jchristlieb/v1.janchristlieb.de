@@ -1,13 +1,6 @@
-#anchor-nav {
-  padding-top: 20px;
-  margin-top: -20px;
-}
-
 .navbar {
   padding: 0;
 }
-
-
 
 .nav-bg-default {
   background-color: transparent;
@@ -20,28 +13,28 @@
   box-shadow: 0 2px 20px -5px $main-color;
 }
 
-.navbar-light {
-  .navbar-nav {
-    .nav-link {
-      color: $text-color;
-      border-bottom: 2px solid transparent;
-      border-top: 2px solid transparent;
-      &:hover {
+// default nav behavior
+@media screen and (min-width: 768px) {
+  .navbar-light {
+    .navbar-nav {
+      .nav-link {
         color: $text-color;
-        border-bottom: 2px solid $highlight-color-lighter;
-        border-top: 2px solid $highlight-color-lighter;
-      }
-      &:active {
-        color: $text-color;
+        &:hover {
+          color: $text-color-var;
+          background-color: $body-color;
+          border-radius: .25rem;
+        }
+        &:active {
+          color: $text-color;
+        }
       }
     }
   }
 }
 
-.navbar-light .navbar-nav .active>.nav-link {
+.navbar-light .navbar-nav .active > .nav-link {
   color: $text-color;
 }
-
 
 .nav-img {
   max-height: 50px;
@@ -52,10 +45,36 @@
   margin: 15px;
 }
 
-@media screen and (max-width: 767px){
-  .navbar-nav {
+// toggle nav behaviour
+@media screen and (max-width: 767px) {
+  .navbar-light .navbar-nav {
     background: $main-color;
     padding: 20px 35px;
+    .nav-link {
+      color: $text-color;
+      &:hover {
+        color: $text-color-var;
+        background-color: $body-color;
+      }
+    }
+  }
+  .dropdown-menu {
+    display: inline-block !important;
+    background: none;
+    border: none;
+    .dropdown-item.active, dropdown-item:active, dropdown-item:focus, .dropdown-item:visited {
+      background-color: transparent;
+      color: $text-color!important;
+    }
+    .dropdown-item:hover {
+      color: $text-color-var!important;
+      background-color: $body-color;
+    }
+  }
+  .highlight {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: $text-color;
   }
 }
 
@@ -67,7 +86,7 @@
   }
 }
 
-// navbar in combnation with admin bar
+// navbar in combination with admin bar
 .admin-bar .navbar {
   top: 46px;
 }
@@ -75,5 +94,31 @@
 @media screen and (min-width: 783px) {
   .admin-bar .navbar {
     top: 32px;
+  }
+}
+
+nav {
+  .navbar-nav {
+    .menu-item-has-children:hover {
+      .nav-link {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .dropdown-menu {
+        display: block;
+        margin: 0 !important;
+        border: none !important;
+        border-top-left-radius: 0 !important;
+      }
+    }
+  }
+}
+
+// js script adds .highlight to parent nav-link when cursor hovers dropdown-menu
+.highlight {
+  background-color: $body-color;
+  border-radius: .25rem .25rem 0 0;
+  & a.nav-link {
+    color: $text-color-var !important;
   }
 }
