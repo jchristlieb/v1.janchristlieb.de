@@ -1,22 +1,51 @@
+// default nav behavior
 .navbar {
   padding: 0;
+  .nav-bg-default {
+    background-color: transparent;
+  }
+  .nav-bg-scroll {
+    background-color: $main-color;
+    -webkit-box-shadow: 0 2px 20px -5px $main-color;
+    -moz-box-shadow: 0 2px 20px -5px $main-color;
+    box-shadow: 0 2px 20px -5px $main-color;
+  }
+  .navbar-light .navbar-nav .active > .nav-link {
+    color: $text-color;
+  }
+  .nav-img {
+    max-height: 50px;
+    margin: 12px 0;
+  }
+  button.navbar-toggler {
+    margin: 15px;
+  }
 }
 
-.nav-bg-default {
-  background-color: transparent;
-}
-
-.nav-bg-scroll {
-  background-color: $main-color;
-  -webkit-box-shadow: 0 2px 20px -5px $main-color;
-  -moz-box-shadow: 0 2px 20px -5px $main-color;
-  box-shadow: 0 2px 20px -5px $main-color;
-}
-
-// default nav behavior
+// non-toggle nav behavior
 @media screen and (min-width: 768px) {
   .navbar-light {
     .navbar-nav {
+      .menu-item-has-children:hover {
+        .nav-link {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+        .dropdown-menu {
+          display: block;
+          margin: 0 !important;
+          border: none !important;
+          border-top-left-radius: 0 !important;
+        }
+      }
+      // js script adds .highlight to parent nav-link when cursor hovers dropdown-menu
+      .highlight {
+        background-color: $body-color;
+        border-radius: .25rem .25rem 0 0;
+        & a.nav-link {
+          color: $text-color-var !important;
+        }
+      }
       .nav-link {
         color: $text-color;
         &:hover {
@@ -30,19 +59,6 @@
       }
     }
   }
-}
-
-.navbar-light .navbar-nav .active > .nav-link {
-  color: $text-color;
-}
-
-.nav-img {
-  max-height: 50px;
-  margin: 12px 0;
-}
-
-.navbar-light .navbar-toggler {
-  margin: 15px;
 }
 
 // toggle nav behaviour
@@ -86,39 +102,17 @@
   }
 }
 
-// navbar in combination with admin bar
+// navbar in combination with non-toggle admin bar
 .admin-bar .navbar {
   top: 46px;
 }
 
+// navbar in combination with toggle admin bar
 @media screen and (min-width: 783px) {
   .admin-bar .navbar {
     top: 32px;
   }
 }
 
-nav {
-  .navbar-nav {
-    .menu-item-has-children:hover {
-      .nav-link {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-      }
-      .dropdown-menu {
-        display: block;
-        margin: 0 !important;
-        border: none !important;
-        border-top-left-radius: 0 !important;
-      }
-    }
-  }
-}
 
-// js script adds .highlight to parent nav-link when cursor hovers dropdown-menu
-.highlight {
-  background-color: $body-color;
-  border-radius: .25rem .25rem 0 0;
-  & a.nav-link {
-    color: $text-color-var !important;
-  }
-}
+
