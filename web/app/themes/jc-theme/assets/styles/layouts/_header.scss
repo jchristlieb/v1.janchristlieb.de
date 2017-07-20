@@ -20,6 +20,17 @@
   button.navbar-toggler {
     margin: 15px;
   }
+  .dropdown-item {
+    padding: 2px;
+  }
+  .dropdown-menu {
+    padding: 10px;
+    & a:before {
+      font-family: FontAwesome;
+      content: "\f105";
+      margin-right: 5px;
+    }
+  }
 }
 
 // non-toggle nav behavior
