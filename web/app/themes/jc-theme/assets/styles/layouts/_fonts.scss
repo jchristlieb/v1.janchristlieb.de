@@ -63,7 +63,7 @@ p.lead {
   }
 }
 
-
+// adjusted styles for particular sections/classes/ids
 #about {
   h1, p {
     font-family: 'Special Elite', cursive;
@@ -74,3 +74,9 @@ p.lead {
   }
 }
 
+.qa-modal {
+  h3 {
+    font-size: 22px;
+    color: $text-color;
+  }
+}

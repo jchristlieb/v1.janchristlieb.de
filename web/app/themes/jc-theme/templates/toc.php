@@ -1,5 +1,5 @@
 <button type="button" class="btn-side-kick" id="toc-btn" data-toggle="tooltip" data-placement="left"
-        title="Zur Übersicht"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i>
+        title="Zur Übersicht"><i class="fa fa-arrow-circle-up fa-2x" aria-hidden="true"></i>
 </button>
 
 
