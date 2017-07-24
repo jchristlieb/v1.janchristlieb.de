@@ -72,6 +72,8 @@ p.lead {
   h1, p {
     font-family: 'Special Elite', cursive;
     color: $text-color;
+    background-color: transparent;
+    padding: 0;
   }
   a {
     color: $highlight-color;

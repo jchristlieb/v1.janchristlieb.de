@@ -11,6 +11,12 @@ section.container.background {
   margin-bottom: 75px;
 }
 
+@media screen and (max-width: 575px) {
+  section.container.background {
+    margin-bottom: 0;
+  }
+}
+
 section {
   padding: 20px;
   .anchor {

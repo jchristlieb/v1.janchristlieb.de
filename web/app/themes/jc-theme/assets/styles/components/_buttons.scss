@@ -15,61 +15,37 @@
   }
 }
 
-
 .btn-side-kick {
-  display: block;
-  color: $main-color;
-  background: $highlight-color;
+  position: fixed;
+  right: 0;
   border: 2px solid $main-color;
   border-right: 0;
-  border-radius: 15px 0 0 15px;
-  width: 55px;
-  max-width: 55px;
-  min-width: 55px;
-  height: 55px;
-  max-height: 55px;
-  min-height: 55px;
-  padding: 0;
-  &:hover {
-    border-color: $main-color-darker;
-    background: $highlight-color-darker;
-  }
+  background-color: $highlight-color;
+  border-radius: 10px 0 0 10px;
+  width: 50px;
+  height: 50px;
+  z-index: 9999;
+}
+
+#qa-btn {
+  bottom: 16%;
+}
+
+#toc-btn {
+  bottom: 9%;
 }
 
 @media screen and (max-width: 575px) {
   .btn-side-kick {
-    width: 50px;
-    max-width: 50px;
-    min-width: 50px;
-    height: 50px;
-    max-height: 50px;
-    min-height: 50px;
+    bottom: 0!important;
+    border-bottom: 0!important;
+    border-right: 2px solid $main-color!important;
+    border-radius: 10px 10px 0 0!important;
   }
-}
-
-#qa-btn, #toc-btn {
-  position: fixed;
-  right: 0;
-  z-index: 99;
-}
-
-#qa-btn {
-  bottom: 50%;
-}
-
-#toc-btn {
-  bottom: 43%;
-}
-
-.fixed-qa-button, .fixed-up-button {
-  position: absolute!important;
-  top:auto;
-}
-
-.fixed-qa-button {
-  bottom:10px!important;
-}
-
-.fixed-up-button{
-  bottom: 85px!important;
+  #qa-btn {
+    left: 35%!important;
+  }
+  #toc-btn {
+    right: 35%!important;
+  }
 }

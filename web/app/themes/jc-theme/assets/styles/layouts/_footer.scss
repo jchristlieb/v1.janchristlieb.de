@@ -1,6 +1,5 @@
 // general footer styles
 footer {
-  margin: 0;
   .social-area {
     background: $main-color;
     box-shadow: 0 2px 20px -5px $main-color-darker;
@@ -53,7 +52,6 @@ footer {
 // footer mobile styles
 @media (max-width: 575px) {
   footer {
-    padding-bottom: 0;
     .social-icons {
       float: inherit;
     }
