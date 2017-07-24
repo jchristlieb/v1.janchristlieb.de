@@ -1,5 +1,4 @@
 <footer>
-    <div class="container color">
         <div class="footer-social">
             <div class="container">
                 <div class="row">
@@ -28,5 +27,4 @@
                 </div>
             </div>
         </div>
-    </div>
 </footer>

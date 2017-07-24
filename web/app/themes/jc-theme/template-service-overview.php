@@ -25,7 +25,7 @@
                         $icon_alt = $icon_object['alt'];
                         ?>
 
-                        <div class="col-md-8 offset-md-2 col-lg-4 offset-lg-0">
+                        <div class="col-md-8 offset-md-2 col-xl-4 offset-xl-0">
                             <a href="<?php the_sub_field('card_link') ?>">
                                 <div class="card">
                                     <div class="card-top">

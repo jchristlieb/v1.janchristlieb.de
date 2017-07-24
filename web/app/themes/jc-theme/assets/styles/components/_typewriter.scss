@@ -1,40 +1,5 @@
-
-#about {
-  font-family: 'Special Elite', cursive;
-  font-size: 40px;
-  h1, p {
-    color: $text-color;
-  }
-  h1 {
-    font-size: 1.25em;
-  }
-  p {
-    font-size: .7em;
-  }
-  a {
-    color: $highlight-color;
-  }
-}
-
 .greeting-image {
   border: 5px solid $body-color;
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 767px) {
-  #about h1 {
-   font-size: 1.15em;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  #about h1 {
-    font-size: .9em;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  #about p {
-    font-size: .5em;
-  }
-}

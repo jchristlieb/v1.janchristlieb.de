@@ -24,6 +24,24 @@
             finalize: function () {
                 // JavaScript to be fired on all pages, after page specific JS is fired
 
+                // Parallax
+                (function(){
+
+                    var parallax = document.querySelectorAll(".parallax"),
+                        speed = 0.5;
+
+                    window.onscroll = function(){
+                        [].slice.call(parallax).forEach(function(el,i){
+
+                            var windowYOffset = window.pageYOffset,
+                                elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+
+                            el.style.backgroundPosition = elBackgrounPos;
+
+                        });
+                    };
+
+                })();
 
                 // Enable the tooltip bootstrap class
                 $(function () {
@@ -52,15 +70,15 @@
 
                 // Navbar color change
                 var nav_position = $('#site-intro').offset();
-                var navbar = $('div.nav-bg-default');
+                var navbar_area = $('div.nav-bg-default');
 
 
                 $(document).scroll(function () {
                     var y = $(this).scrollTop();
                     if (y >= nav_position.top) {
-                        navbar.addClass('nav-bg-scroll');
+                        navbar_area.addClass('nav-bg-scroll');
                     } else {
-                        navbar.removeClass('nav-bg-scroll');
+                        navbar_area.removeClass('nav-bg-scroll');
                     }
                 });
 
@@ -89,7 +107,7 @@
                 printGreeting(
                     'about',
                     '<h1 class="introduction">Hi, ich bin Jan</h1>' +
-                    '<p>Ich entwickle Webseiten und digitale Marketing Strategien. Interessiert? <a class="lets-talk" href="#contact">Lass uns reden</a></p>',
+                    '<p class="lead">Ich entwickle Webseiten und digitale Marketing Strategien. Interessiert? <a class="lets-talk" href="#contact">Lass uns reden</a></p>',
                     50
                 );
 

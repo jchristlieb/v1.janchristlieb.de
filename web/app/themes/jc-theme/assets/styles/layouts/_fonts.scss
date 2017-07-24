@@ -1,26 +1,76 @@
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Montserrat', sans-serif;
   color: $text-color-var;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 50px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
 }
 
 p {
-  color: $text-color-var;
-}
-
-.card-header a:hover, a:active, a:focus, a:visited {
-    text-decoration: none;
-  }
-
-.lead-description {
-  font-size: 1.25rem;
   font-weight: 300;
-  padding-bottom: 50px;
+  font-size: 18px;
+  line-height: 26px;
 }
 
-@media screen and (max-width: 512px) {
-  .jumbotron h1 {
-    font-size: 1.25em;
+p.lead {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+@media screen and (max-width: 575px) {
+  h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 46px;
   }
-  .jumbotron p {
-    font-size: 1em;
+
+  h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  p.lead {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
+
+
+#about {
+  h1, p {
+    font-family: 'Special Elite', cursive;
+    color: $text-color;
+  }
+  a {
+    color: $highlight-color;
+  }
+}
+
