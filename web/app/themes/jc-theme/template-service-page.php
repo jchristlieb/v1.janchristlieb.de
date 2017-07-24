@@ -34,7 +34,7 @@ get_template_part('templates/qa-modal');
                             $image_title = $image_object['title'];
                             ?>
 
-                            <div class="col-md-4 d-inline-flex justify-content-center<?php if ($i % 2 == 0) echo ' pull-md-8' ?>">
+                            <div class="col-md-4 d-inline-flex justify-content-center align-items-center<?php if ($i % 2 == 0) echo ' pull-md-8' ?>">
                                 <img class="img-fluid" src="<?php echo $image; ?>"
                                      alt="<?php echo $image_alt; ?>"
                                      title="<?php echo $image_title; ?>"/>

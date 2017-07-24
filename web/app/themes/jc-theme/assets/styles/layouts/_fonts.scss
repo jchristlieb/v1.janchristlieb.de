@@ -7,6 +7,10 @@ h1 {
   font-weight: 600;
   font-size: 44px;
   line-height: 50px;
+  display: inline;
+  color: $text-color!important;
+  background-color: $main-color;
+  padding: 10px 20px;
 }
 
 h2 {
