@@ -1,68 +1,65 @@
-
-.footer-social {
-  background: $main-color;
-  box-shadow: 0 2px 20px -5px $main-color-darker;
-}
-
-.footer-legal {
-  background: $main-color-darker;
-  box-shadow: 0 2px 20px -5px $main-color-darker;
-  padding: 10px;
-  border-radius: 0 0 5px 5px;
-}
-
-
-.sb-social, .sb-copyright, .sb-imprint {
-  padding: 10px;
-  vertical-align: middle;
-  p {
-    margin: 0;
+// general footer styles
+footer {
+  margin: 0;
+  .social-area {
+    background: $main-color;
+    box-shadow: 0 2px 20px -5px $main-color-darker;
+    .fa-twitter, .fa-github, .fa-xing, .fa-google-plus {
+      color: $text-color;
+      &:hover {
+        color: $highlight-color-lighter;
+      }
+    }
+  }
+  .legal-area {
+    background: $main-color-darker;
+    box-shadow: 0 2px 20px -5px $main-color-darker;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
   }
 }
 
-.sb-imprint {
-  .link {
-    padding-left: 10px;
+// footer sidebar styles
+footer {
+  .sb-social, .sb-copyright, .sb-imprint {
+    padding: 10px;
+    vertical-align: middle;
+    p {
+      margin: 0;
+    }
   }
-  a {
-    color: $body-color;
-    text-decoration: none;
-    &:hover {
-      color: $highlight-color-lighter;
+  .sb-imprint {
+    .link {
+      padding-left: 10px;
+    }
+    a {
+      color: $body-color;
+      text-decoration: none;
+      &:hover {
+        color: $highlight-color-lighter;
+      }
+    }
+  }
+  .sb-social {
+    list-style-type: none;
+    padding: 0;
+    li {
+      display: inline-block;
+      padding: 20px;
     }
   }
 }
 
-
-.sb-social {
-  list-style-type: none;
-  padding: 0;
-  li {
-    display: inline-block;
-    padding: 20px;
-  }
-}
-
-.fa-twitter, .fa-github, .fa-xing, .fa-google-plus {
-  color: $text-color;
-  &:hover {
-    color: $highlight-color-lighter;
-  }
-}
-
-footer {
-  margin: 0;
-}
-
+// footer mobile styles
 @media (max-width: 575px) {
   footer {
     padding-bottom: 0;
-  }
-  footer .social-icons {
-    float: inherit;
-  }
-  footer .copyright {
-    text-align:center;
+    .social-icons {
+      float: inherit;
+    }
+    .copyright {
+      text-align: center;
+    }
   }
 }
 

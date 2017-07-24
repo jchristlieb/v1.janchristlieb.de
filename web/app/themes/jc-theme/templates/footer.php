@@ -1,5 +1,5 @@
 <footer>
-        <div class="footer-social">
+        <div class="social-area">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -11,7 +11,7 @@
             </div>
         </div>
 
-        <div class="footer-legal">
+        <div class="legal-area">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
