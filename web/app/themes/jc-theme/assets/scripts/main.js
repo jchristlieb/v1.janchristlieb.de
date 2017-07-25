@@ -88,6 +88,11 @@
                     50
                 );
 
+                $(function() {
+                    $('.card').matchHeight(options);
+                });
+
+
             }
         },
         // Fire those code on all Template service pages

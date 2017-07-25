@@ -19,7 +19,6 @@
         </div>
     </div>
 
-    <div class="card-deck">
         <div class="container">
             <div class="row">
 
@@ -55,8 +54,6 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
 
-
-            </div>
         </div>
     </div>
 </section>
