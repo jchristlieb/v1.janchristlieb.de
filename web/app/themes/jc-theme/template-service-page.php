@@ -22,7 +22,7 @@ get_template_part('templates/qa-modal');
                         <div class="row content-item">
                             <div class="col-md-8<?php if ($i % 2 == 0) echo ' push-md-4' ?>">
                                 <h2 class="anchor"
-                                    id="<?php the_sub_field('headline') ?>"><?php the_sub_field('headline') ?></h2>
+                                    id="<?php the_sub_field('section_name') ?>"><?php the_sub_field('headline') ?></h2>
                                 <p><?php the_sub_field('text') ?></p>
                             </div>
 

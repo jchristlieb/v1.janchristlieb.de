@@ -30,7 +30,7 @@ get_template_part('templates/toc');
                              alt="<?php echo $icon_alt; ?>"
                              title="<?php echo $icon_title; ?>"/>
                         <h2 class="anchor"
-                            id="<?php the_sub_field('headline') ?>"><?php the_sub_field('headline') ?></h2>
+                            id="<?php the_sub_field('section_name') ?>"><?php the_sub_field('headline') ?></h2>
                     </div>
                     <div class="col-12">
                         <p><?php the_sub_field('text_body') ?></p>
