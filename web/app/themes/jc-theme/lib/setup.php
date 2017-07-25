@@ -40,7 +40,7 @@ function setup()
     add_image_size('1500x400', 1500, 400);
     add_image_size('1920x1080', 1920, 1080);
     add_image_size('1950x1300', 1950, 1300);
-    add_image_size('1920x500', 1920, 500, ['center', 'center']);
+    add_image_size('1920x800', 1920, 800, ['center', 'center']);
     add_image_size('960x540', 960, 540);
     add_image_size('800x800', 800, 800);
     add_image_size('600X600', 600, 600);
