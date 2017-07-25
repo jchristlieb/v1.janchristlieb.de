@@ -37,11 +37,14 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  .toc-item:before {
+  .toc-item {
+    line-height: 26px;
+    &:before {
       content: "\f0a9";
       font-family: FontAwesome;
       display: inline-block;
       width: 1.3em;
+    }
   }
 }
 
