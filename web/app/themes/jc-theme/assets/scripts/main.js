@@ -24,29 +24,6 @@
             finalize: function () {
                 // JavaScript to be fired on all pages, after page specific JS is fired
 
-                // Parallax
-                (function(){
-
-                    var parallax = document.querySelectorAll(".parallax"),
-                        speed = 0.5;
-
-                    window.onscroll = function(){
-                        [].slice.call(parallax).forEach(function(el,i){
-
-                            var windowYOffset = window.pageYOffset,
-                                elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
-
-                            el.style.backgroundPosition = elBackgrounPos;
-
-                        });
-                    };
-
-                })();
-
-                // Enable the tooltip bootstrap class
-                $(function () {
-                    $('[data-toggle="tooltip"]').tooltip();
-                });
 
                 var navbar = $('div.nav-bg-default');
 
@@ -114,12 +91,39 @@
             }
         },
         // Fire those code on all Template service pages
-        'page_template_service_page': {
+        'page_template_template_service_page': {
             init: function () {
                 // JavaScript to be fired on all pages
             },
             finalize: function () {
                 // JavaScript to be fired on all pages, after page specific JS is fired
+
+                // Resize and reposition SideKickButtons at SM Screen Size
+                $(window).resize(function () {
+                    var sidekick_btn = $("#toc-btn, #qa-btn");
+
+                    if ($(window).width() < 576) {
+                        sidekick_btn.removeClass('fa-2x','btn-sidekick');
+                        sidekick_btn.addClass('btn-sidekick-mobile');
+                    } else {
+                        sidekick_btn.addClass('fa-2x','btn-sidekick');
+                        sidekick_btn.removeClass('btn-sidekick-mobile');
+                    }
+                });
+
+                // Sidekick buttons should stop before footer
+                var footer_position = $('#footer').offset();
+
+                $(window).on('scroll', function () {
+                    var y = $(this).scrollTop();
+                    if (y >= footer_position.top) {
+                        document.getElementById("qa-btn").style.position = "absolute";
+                    } else {
+                        document.getElementById("qa-btn").style.position = "fixed";
+                    }
+                });
+
+
 
                 $(document).ready(function(){
                     // Add smooth scrolling to all links
@@ -144,19 +148,8 @@
                     });
                 });
 
-                // When the user scrolls down to TOC element, show the back-to-toc-button
-                var toc_position = $('#toc').offset();
 
-                $(window).on('scroll', function () {
-                    var y = $(this).scrollTop();
-                    if (y >= toc_position.top) {
-                        document.getElementById("toc-btn").style.display = "block";
-                    } else {
-                        document.getElementById("toc-btn").style.display = "none";
-                    }
-                });
-
-                // When the user clicks on the back-to-toc-button, scroll to the toc
+                // When the user clicks on the back-to-toc-button, scroll back to toc
                 $("#toc-btn").click(function() {
                     $('html, body').animate({
                         scrollTop: $("#toc").offset().top

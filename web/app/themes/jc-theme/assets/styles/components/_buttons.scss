@@ -15,7 +15,7 @@
   }
 }
 
-.btn-side-kick {
+.btn-sidekick {
   position: fixed;
   right: 0;
   border: 2px solid $main-color;
@@ -24,6 +24,18 @@
   border-radius: 10px 0 0 10px;
   width: 50px;
   height: 50px;
+  z-index: 9999;
+}
+
+.btn-sidekick-mobile {
+  position: fixed;
+  bottom: 0!important;
+  border: 2px solid $main-color;
+  border-bottom: 0;
+  background-color: $highlight-color;
+  border-radius: 10px 10px 0 0;
+  width: 33px;
+  height: 28px;
   z-index: 9999;
 }
 
@@ -36,16 +48,19 @@
 }
 
 @media screen and (max-width: 575px) {
-  .btn-side-kick {
-    bottom: 0!important;
-    border-bottom: 0!important;
-    border-right: 2px solid $main-color!important;
-    border-radius: 10px 10px 0 0!important;
-  }
   #qa-btn {
-    left: 35%!important;
+    right: 2%!important;
   }
   #toc-btn {
-    right: 35%!important;
+    right: 12%!important;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  #qa-btn {
+    right: 2%!important;
+  }
+  #toc-btn {
+    right: 15%!important;
   }
 }

@@ -2,10 +2,12 @@
 .navbar {
   padding: 0;
   .nav-bg-default {
-    background-color: transparent;
+    background-color: $main-color;
+    opacity: .7;
   }
   .nav-bg-scroll {
     background-color: $main-color;
+    opacity: 1!important;
     -webkit-box-shadow: 0 2px 20px -5px $main-color;
     -moz-box-shadow: 0 2px 20px -5px $main-color;
     box-shadow: 0 2px 20px -5px $main-color;
@@ -47,6 +49,9 @@
           margin: 0 !important;
           border: none !important;
           border-top-left-radius: 0 !important;
+          .dropdown-item:active, .dropdown-item.active {
+            background-color: $highlight-color;
+          }
         }
       }
       // js script adds .highlight to parent nav-link when cursor hovers dropdown-menu

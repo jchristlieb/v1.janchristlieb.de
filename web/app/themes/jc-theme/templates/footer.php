@@ -1,4 +1,4 @@
-<footer>
+<footer id="footer">
         <div class="social-area">
             <div class="container">
                 <div class="row">

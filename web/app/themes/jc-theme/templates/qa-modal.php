@@ -1,6 +1,5 @@
-<button type="button" class="btn-side-kick custom-tooltip" id="qa-btn" data-toggle="tooltip" data-placement="left" title="Lass uns reden"><i class="fa fa-commenting-o fa-2x" aria-hidden="true"
-                                                           data-toggle="modal" data-target="#qa-modal"></i>
-</button>
+<button type="button" class="btn-sidekick custom-tooltip fa fa-commenting-o fa-2x" id="qa-btn" data-toggle="modal"
+        data-target="#qa-modal"></button>
 
 <section class="qa-modal">
     <div class="modal fade" id="qa-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"

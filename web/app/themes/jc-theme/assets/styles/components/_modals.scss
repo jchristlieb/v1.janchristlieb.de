@@ -101,7 +101,14 @@
 }
 
 
-
+@media screen and (max-width: 575px){
+  .qa-modal {
+    .modal-dialog {
+      width:300px;
+      margin:0;
+    }
+  }
+}
 
 
 

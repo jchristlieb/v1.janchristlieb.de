@@ -1,6 +1,4 @@
-<button type="button" class="btn-side-kick" id="toc-btn" data-toggle="tooltip" data-placement="left"
-        title="Zur Übersicht"><i class="fa fa-arrow-circle-up fa-2x" aria-hidden="true"></i>
-</button>
+<button type="button" class="btn-sidekick fa fa-arrow-circle-up fa-2x" id="toc-btn"></button>
 
 
 <section class="toc">
