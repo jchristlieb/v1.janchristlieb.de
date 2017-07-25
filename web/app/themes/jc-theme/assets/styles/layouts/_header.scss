@@ -51,6 +51,7 @@
           border-top-left-radius: 0 !important;
           .dropdown-item:active, .dropdown-item.active {
             background-color: $highlight-color;
+            color: $main-color-darker;
           }
         }
       }
