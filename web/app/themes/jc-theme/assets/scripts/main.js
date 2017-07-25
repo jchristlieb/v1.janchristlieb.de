@@ -111,18 +111,6 @@
                     }
                 });
 
-                // Sidekick buttons should stop before footer
-                var footer_position = $('#footer').offset();
-
-                $(window).on('scroll', function () {
-                    var y = $(this).scrollTop();
-                    if (y >= footer_position.top) {
-                        document.getElementById("qa-btn").style.position = "absolute";
-                    } else {
-                        document.getElementById("qa-btn").style.position = "fixed";
-                    }
-                });
-
 
 
                 $(document).ready(function(){
