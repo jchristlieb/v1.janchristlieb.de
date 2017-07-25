@@ -14,7 +14,8 @@
                         <?php while (have_rows('content_block_a')) : the_row(); ?>
                             <a class="animated-link" href="#<?php the_sub_field('section_name') ?>">
                                 <li>
-                                    <h4 class="toc-item"><?php the_sub_field('toc_info') ?></h4>
+                                    <h4 class="toc-item"><?php the_sub_field('headline') ?>
+                                        :&nbsp;<?php the_sub_field('toc_info') ?></h4>
                                 </li>
                             </a>
                         <?php endwhile; ?>
