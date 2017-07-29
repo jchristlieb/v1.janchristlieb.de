@@ -48,6 +48,10 @@ get_template_part('templates/qa-modal');
     </div>
 </section>
 
+<?php
+get_template_part('templates/contact-form');
+?>
+
 
 
 

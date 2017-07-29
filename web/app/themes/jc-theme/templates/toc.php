@@ -18,6 +18,16 @@
                                 </li>
                             </a>
                         <?php endwhile; ?>
+
+                        <?php if (get_field('form_section_name')): ?>
+                        <a class="animated-link" href="#<?php echo get_field('form_section_name') ?>">
+                            <li>
+                                <h4 class="toc-item"><?php echo get_field('form_toc_info') ?></h4>
+                            </li>
+                        </a>
+                        <?php else: ?>
+                        <?php endif; ?>
+
                     </ul>
                 </div>
             </div>
