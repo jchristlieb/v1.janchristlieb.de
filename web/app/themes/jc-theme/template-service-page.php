@@ -10,7 +10,7 @@ get_template_part('templates/toc');
 get_template_part('templates/qa-modal');
 ?>
 
-<section class="content">
+<section class="content" id="section-content">
     <div class="container">
         <div class="row">
             <div class="col-12">

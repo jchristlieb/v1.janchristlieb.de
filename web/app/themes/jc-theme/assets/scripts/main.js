@@ -69,11 +69,14 @@
             finalize: function () {
                 // JavaScript to be fired on the home page, after the init JS
 
+
                 function printGreeting(id, sentence, speed) {
                     var index = 0,
                         timer = setInterval(function() {
                             var char= sentence.charAt(index);
-                            if(char === '<')index= sentence.indexOf('>',index);
+                            if(char === '<'){
+                                index = sentence.indexOf('>',index);
+                            }
                             document.getElementById(id).innerHTML= sentence.substr(0,index);
                             if(++index === sentence.length){
                                 clearInterval(timer);
@@ -102,6 +105,17 @@
             },
             finalize: function () {
                 // JavaScript to be fired on all pages, after page specific JS is fired
+
+                var backToTop = $('#toc-btn');
+                $(document).scroll(function () {
+                    var y = $(this).scrollTop();
+                    if (y >= $(window).height()) {
+                        backToTop.fadeIn();
+                    } else {
+                        backToTop.fadeOut();
+                    }
+                });
+
 
                 // Resize and reposition SideKickButtons at SM Screen Size
                 $(window).resize(function () {
