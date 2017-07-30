@@ -106,13 +106,13 @@
             finalize: function () {
                 // JavaScript to be fired on all pages, after page specific JS is fired
 
-                var backToTop = $('#toc-btn');
+                var backToToc = $('#toc-btn');
                 $(document).scroll(function () {
                     var y = $(this).scrollTop();
                     if (y >= $(window).height()) {
-                        backToTop.fadeIn();
+                        backToToc.fadeIn();
                     } else {
-                        backToTop.fadeOut();
+                        backToToc.fadeOut();
                     }
                 });
 
