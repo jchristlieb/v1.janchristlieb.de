@@ -1,5 +1,4 @@
-<button type="button" style="display: none" class="btn-sidekick fa fa-arrow-circle-up fa-2x" id="toc-btn"></button>
-
+<button type="button" style="display: none" class="btn-sidekick" id="toc-btn"></button>
 
 <section class="toc">
     <div class="container">

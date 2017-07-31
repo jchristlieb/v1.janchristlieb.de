@@ -1,4 +1,4 @@
-<button type="button" class="btn-sidekick custom-tooltip fa fa-commenting-o fa-2x" id="qa-btn" data-toggle="modal"
+<button type="button" class="btn-sidekick custom-tooltip" id="qa-btn" data-toggle="modal"
         data-target="#qa-modal"></button>
 
 <section class="qa-modal">
