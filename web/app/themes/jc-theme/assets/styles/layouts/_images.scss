@@ -1,0 +1,15 @@
+.img-enlarge {
+  position: relative;
+  cursor: zoom-in;
+  margin-bottom: 50px;
+  .img-description {
+    position: absolute;
+    background: $body-color-darker;
+    padding: 10px;
+    width: 100%;
+    p {
+      margin: 0;
+    }
+  }
+}
+

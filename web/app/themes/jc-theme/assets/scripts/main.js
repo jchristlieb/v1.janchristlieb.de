@@ -106,6 +106,15 @@
             finalize: function () {
                 // JavaScript to be fired on all pages, after page specific JS is fired
 
+                $(function() {
+                    $('#img-enlarge').on('click', function() {
+                        $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
+                        $('#enlargeImageModal').modal('show');
+                    });
+                });
+
+
+                // Fadein/out Toc button based on window position
                 var backToToc = $('#toc-btn');
                 $(document).scroll(function () {
                     var y = $(this).scrollTop();

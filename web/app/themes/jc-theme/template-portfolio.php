@@ -66,10 +66,10 @@
 );
 ?>
 
-<?php $project_query = new wp_query($args); ?>
+<?php $projectQuery = new wp_query($args); ?>
 <?php $i = 1 ?>
-<?php while ($project_query->have_posts()) :
-    $project_query->the_post(); ?>
+<?php while ($projectQuery->have_posts()) :
+    $projectQuery->the_post(); ?>
 
 
     <div class="modal fade" id="portfolio-modal-<?php echo $i ?>" tabindex="-1" role="dialog"

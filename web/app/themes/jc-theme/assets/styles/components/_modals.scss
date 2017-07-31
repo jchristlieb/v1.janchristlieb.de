@@ -111,4 +111,9 @@
 }
 
 
-
+.image-modal {
+  .modal-dialog {
+    max-width: none;
+    margin: 10%;
+  }
+}
