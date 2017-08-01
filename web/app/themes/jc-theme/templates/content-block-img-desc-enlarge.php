@@ -12,24 +12,36 @@
                     <?php while (have_rows('content_block_a')) :
                         the_row(); ?>
                         <?php $i++ ?>
+
+                        <?php
+                        $image_object = get_sub_field('image');
+                        $image_size = "360x360";
+                        $image = $image_object['sizes'][$image_size];
+                        $image_modal_size = "800x800";
+                        $image_modal = $image_object['sizes'][$image_modal_size];
+                        $image_alt = $image_object['alt'];
+                        $image_title = $image_object['title'];
+                        $image_desc = $image_object['description'];
+                        ?>
+
+
                         <div class="row content-item">
+                            <?php if ($image) : ?>
                             <div class="col-md-8<?php if ($i % 2 == 0) echo ' push-md-4' ?>">
                                 <h2 class="anchor"
                                     id="<?php the_sub_field('section_name') ?>"><?php the_sub_field('headline') ?></h2>
                                 <p><?php the_sub_field('text') ?></p>
                             </div>
+                            <?php else: ?>
+                            <div class="col-md-12">
+                                <h2 class="anchor"
+                                    id="<?php the_sub_field('section_name') ?>"><?php the_sub_field('headline') ?></h2>
+                                <p><?php the_sub_field('text') ?></p>
+                            </div>
+                            <?php endif; ?>
 
-                            <?php
-                            $image_object = get_sub_field('image');
-                            $image_size = "360x360";
-                            $image = $image_object['sizes'][$image_size];
-                            $image_modal_size = "800x800";
-                            $image_modal = $image_object['sizes'][$image_modal_size];
-                            $image_alt = $image_object['alt'];
-                            $image_title = $image_object['title'];
-                            $image_desc = $image_object['description'];
-                            ?>
 
+                            <?php if ($image) : ?>
                             <div class="col-md-4 d-inline-flex flex-column justify-content-center align-items-center<?php if ($i % 2 == 0) echo ' pull-md-8' ?>">
                                 <a href="#img-modal-<?php echo $i ?>" data-toggle="modal">
                                     <div class="img-enlarge justify-content-center align-items-center" id="img-enlarge">
@@ -48,6 +60,8 @@
                                     </div>
                                 </a>
                             </div>
+                            <?php else: ?>
+                            <?php endif; ?>
 
                             <div class="image-modal">
                                 <div class="modal fade" id="img-modal-<?php echo $i ?>" tabindex="-1" role="dialog"
