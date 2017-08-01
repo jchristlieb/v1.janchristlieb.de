@@ -18,7 +18,7 @@ section.container.background {
 }
 
 section {
-  padding: 20px;
+  padding: 25px;
   .anchor {
     padding-top: 150px;
     margin-top: -150px;
@@ -43,7 +43,8 @@ section.welcome {
 }
 
 section.teasers {
-  padding: 150px 50px 100px 50px;
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
 
 section.testimonials {
@@ -51,7 +52,8 @@ section.testimonials {
 }
 
 section.contact {
-  padding: 100px 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 section.site-intro {
@@ -89,10 +91,6 @@ section.content {
   }
 }
 
-section.parallax {
-  background-position: 0 0;
-  padding: 0;
-}
 
 
 
