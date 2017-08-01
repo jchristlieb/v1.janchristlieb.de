@@ -15,5 +15,8 @@
   img {
     border: 2px solid $body-color-darker;
   }
+  .no-img-border {
+    border: none!important;
+  }
 }
 

@@ -53,7 +53,7 @@
                                                 <p><?php echo $image_desc; ?></p>
                                             </div>
                                         <?php else: ?>
-                                            <img class="img-fluid rounded" src="<?php echo $image; ?>"
+                                            <img class="no-img-border img-fluid rounded" src="<?php echo $image; ?>"
                                                  alt="<?php echo $image_alt; ?>"
                                                  title="<?php echo $image_title; ?>"/>
                                         <?php endif; ?>
