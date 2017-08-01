@@ -46,10 +46,10 @@
                                 <a href="#img-modal-<?php echo $i ?>" data-toggle="modal">
                                     <div class="img-enlarge justify-content-center align-items-center" id="img-enlarge">
                                         <?php if ($image_desc) : ?>
-                                            <img class="img-fluid rounded-top" src="<?php echo $image; ?>"
+                                            <img class="img-fluid rounded-top border-bottom-0" src="<?php echo $image; ?>"
                                                  alt="<?php echo $image_alt; ?>"
                                                  title="<?php echo $image_title; ?>"/>
-                                            <div class="img-description rounded-bottom">
+                                            <div class="img-description rounded-bottom border-top-0">
                                                 <p><?php echo $image_desc; ?></p>
                                             </div>
                                         <?php else: ?>
