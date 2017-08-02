@@ -1,5 +1,5 @@
-<nav class="navbar fixed-top navbar-toggleable-sm navbar-light ">
-    <div class="container nav-bg-default nav-bg-scroll">
+<nav id="primary-navigation" class="navbar fixed-top navbar-toggleable-sm navbar-light nav-bg-default">
+    <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">

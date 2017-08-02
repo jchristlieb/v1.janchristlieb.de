@@ -25,7 +25,7 @@
                 // JavaScript to be fired on all pages, after page specific JS is fired
 
 
-                var navbar = $('div.nav-bg-default');
+                var navbar = $('nav.nav-bg-default');
 
                 $("button.navbar-toggler ").click(function(){
                     navbar.addClass("nav-bg-scroll");
@@ -46,16 +46,16 @@
                 });
 
                 // Navbar color change
-                var nav_position = $('#site-intro').offset();
-                var navbar_area = $('div.nav-bg-default');
+                var navPosition = $('#site-intro').offset();
+                var navbarArea = $('#primary-navigation');
 
 
                 $(document).scroll(function () {
                     var y = $(this).scrollTop();
-                    if (y >= nav_position.top) {
-                        navbar_area.addClass('nav-bg-scroll');
+                    if (y >= navPosition.top) {
+                        navbarArea.addClass('nav-bg-scroll');
                     } else {
-                        navbar_area.removeClass('nav-bg-scroll');
+                        navbarArea.removeClass('nav-bg-scroll');
                     }
                 });
 

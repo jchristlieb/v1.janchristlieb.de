@@ -1,17 +1,21 @@
+// nav color change
+
+.nav-bg-default {
+  background-color: $main-color;
+  opacity: .7;
+}
+
+.nav-bg-scroll {
+  background-color: $main-color;
+  opacity: 1 !important;
+  -webkit-box-shadow: 0 2px 20px -5px $main-color;
+  -moz-box-shadow: 0 2px 20px -5px $main-color;
+  box-shadow: 0 2px 20px -5px $main-color;
+}
+
 // default nav behavior
 .navbar {
   padding: 0;
-  .nav-bg-default {
-    background-color: $main-color;
-    opacity: .7;
-  }
-  .nav-bg-scroll {
-    background-color: $main-color;
-    opacity: 1!important;
-    -webkit-box-shadow: 0 2px 20px -5px $main-color;
-    -moz-box-shadow: 0 2px 20px -5px $main-color;
-    box-shadow: 0 2px 20px -5px $main-color;
-  }
   .navbar-light .navbar-nav .active > .nav-link {
     color: $text-color;
   }
@@ -97,10 +101,10 @@
     border: none;
     .dropdown-item.active, dropdown-item:active, dropdown-item:focus, .dropdown-item:visited {
       background-color: transparent;
-      color: $text-color!important;
+      color: $text-color !important;
     }
     .dropdown-item:hover {
-      color: $text-color-var!important;
+      color: $text-color-var !important;
       background-color: $body-color;
     }
   }
@@ -130,6 +134,7 @@
     top: 32px;
   }
 }
+
 @media screen and (max-width: 600px) {
   #wpadminbar {
     position: fixed;

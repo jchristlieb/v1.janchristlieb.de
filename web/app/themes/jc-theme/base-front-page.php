@@ -48,11 +48,11 @@ get_template_part('templates/header');
             <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
     </div><!-- /.wrap -->
-    <?php
+</section>
+<?php
     do_action('get_footer');
     get_template_part('templates/footer');
     wp_footer();
     ?>
-</section>
 </body>
 </html>

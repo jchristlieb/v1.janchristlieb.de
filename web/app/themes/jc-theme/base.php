@@ -31,11 +31,12 @@ get_template_part('templates/hero-image');
             </aside><!-- /.sidebar -->
         <?php endif; ?>
     </div><!-- /.wrap -->
-    <?php
-    do_action('get_footer');
-    get_template_part('templates/footer');
-    wp_footer();
-    ?>
 </section>
+<?php
+do_action('get_footer');
+get_template_part('templates/footer');
+wp_footer();
+?>
+
 </body>
 </html>
