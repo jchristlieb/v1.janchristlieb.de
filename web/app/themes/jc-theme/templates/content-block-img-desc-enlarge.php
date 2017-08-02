@@ -30,12 +30,14 @@
                             <div class="col-md-8<?php if ($i % 2 == 0) echo ' push-md-4' ?>">
                                 <h2 class="anchor"
                                     id="<?php the_sub_field('section_name') ?>"><?php the_sub_field('headline') ?></h2>
+                                <div class="divider"></div>
                                 <p><?php the_sub_field('text') ?></p>
                             </div>
                             <?php else: ?>
                             <div class="col-md-12">
                                 <h2 class="anchor"
                                     id="<?php the_sub_field('section_name') ?>"><?php the_sub_field('headline') ?></h2>
+                                <div class="divider"></div>
                                 <p><?php the_sub_field('text') ?></p>
                             </div>
                             <?php endif; ?>
