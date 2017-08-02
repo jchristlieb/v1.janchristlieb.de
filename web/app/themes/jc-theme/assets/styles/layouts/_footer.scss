@@ -1,8 +1,8 @@
 // general footer styles
 footer {
+  background-color: $main-color;
+  background: linear-gradient(1deg,$main-color 33%,$main-color-darker 99%);
   .social-area {
-    background: $main-color;
-    box-shadow: 0 2px 20px -5px $main-color-darker;
     .fa-twitter, .fa-github, .fa-xing, .fa-google-plus {
       color: $text-color;
       &:hover {
@@ -11,8 +11,6 @@ footer {
     }
   }
   .legal-area {
-    background: $main-color-darker;
-    box-shadow: 0 2px 20px -5px $main-color-darker;
     padding: 10px;
   }
 }

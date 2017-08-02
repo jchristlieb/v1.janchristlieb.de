@@ -7,6 +7,7 @@
   .card-top {
     overflow: hidden;
     background-color: $main-color;
+    background: linear-gradient(7deg,$main-color-lighter 0%,$main-color-darker 55%,$main-color 99%);
     height: 120px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
