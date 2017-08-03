@@ -2,16 +2,18 @@
 
 .nav-bg-default {
   background-color: $main-color;
-  opacity: .7;
 }
 
 .nav-bg-scroll {
   background-color: $main-color;
-  background: linear-gradient(1deg,$main-color-darker 33%,$main-color 99%);
-  opacity: 1 !important;
+  height: 60px;
+  opacity: 1!important;
   -webkit-box-shadow: 0 2px 20px -5px $main-color;
   -moz-box-shadow: 0 2px 20px -5px $main-color;
   box-shadow: 0 2px 20px -5px $main-color;
+  .nav-img {
+    max-height: 35px!important;
+  }
 }
 
 // default nav behavior
