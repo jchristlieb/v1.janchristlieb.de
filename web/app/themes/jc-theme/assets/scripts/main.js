@@ -25,12 +25,6 @@
                 // JavaScript to be fired on all pages, after page specific JS is fired
 
 
-                var navbar = $('nav.nav-bg-default');
-
-                $("button.navbar-toggler ").click(function(){
-                    navbar.addClass("nav-bg-scroll");
-                });
-
                 // If hover on .dropdown add .highlight to parent menu item
                 $(document).ready(function(){
                     $(".dropdown").hover(
