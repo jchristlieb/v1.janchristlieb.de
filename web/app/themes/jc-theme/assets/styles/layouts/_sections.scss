@@ -1,7 +1,3 @@
-/*body {
-  background-color: $body-color;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%232e5c77' fill-opacity='0.3' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-}*/
 
 body {
   background-color: $body-color;
@@ -31,7 +27,7 @@ section.welcome {
   display: flex;
   align-items: center;
   background-color: $main-color;
-  background: linear-gradient(10deg,$main-color-lighter 2%,$main-color-darker 33%,$main-color 77%);
+  background: linear-gradient(10deg, $main-color-lighter 2%, $main-color-darker 33%, $main-color 77%);
   height: calc(100vh - 0px);
   position: relative;
   .lets-talk {
@@ -94,6 +90,56 @@ section.content {
 
 section.toc-contact-form {
   padding-top: 0;
+}
+
+section.project-gallery {
+  margin-top: 100px;
+}
+
+section.project-info {
+  .project-box {
+    border-radius: .25rem;
+    border: 2px solid $main-color-lighter;
+    background: $body-color-darker;
+    display: table;
+    margin-top: 20px;
+  }
+  .col-md-8, .col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .project-item {
+    padding: 25px;
+    margin-right: 20px;
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        padding: 10px;
+        &:before {
+          font-family: FontAwesome;
+          content: "\f02b";
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+  img {
+      padding-top: 20px;
+  }
+  .project-about {
+    padding: 25px;
+    p, a {
+      font-size: 16px;
+      font-weight: lighter;
+    }
+    .project-link:before {
+      font-family: FontAwesome;
+      content: "\f105";
+      font-size: 20px;
+      padding-right: 10px;
+    }
+  }
 }
 
 
