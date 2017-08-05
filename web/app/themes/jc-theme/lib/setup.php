@@ -38,6 +38,8 @@ function setup()
     // http://codex.wordpress.org/Function_Reference/add_image_size
     add_theme_support('post-thumbnails');
     add_image_size('1920x700', 1920, 700, ['center', 'center']);
+    add_image_size('960x640', 960, 640, ['center', 'center']);
+    add_image_size('960x540', 960, 540, ['center', 'center']);
     add_image_size('360x360', 360, 360);
     add_image_size('960x540',960,540);
     add_image_size('800x800', 800, 800);

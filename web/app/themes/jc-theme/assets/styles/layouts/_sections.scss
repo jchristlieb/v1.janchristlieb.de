@@ -94,6 +94,9 @@ section.toc-contact-form {
 
 section.project-gallery {
   margin-top: 100px;
+  .carousel-item {
+    height: inherit;
+  }
 }
 
 section.project-info {
@@ -102,14 +105,9 @@ section.project-info {
     border: 2px solid $main-color-lighter;
     background: $body-color-darker;
     display: table;
-    margin-top: 20px;
-  }
-  .col-md-8, .col-sm-12 {
-    padding-left: 0;
-    padding-right: 0;
   }
   .project-item {
-    padding: 25px;
+    padding-bottom: 20px;
     margin-right: 20px;
     ul {
       list-style: none;
