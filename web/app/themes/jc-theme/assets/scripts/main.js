@@ -92,16 +92,16 @@
 
             }
         },
-        // Fire those code on all Template service pages
-        'page_template_template_service_page': {
+        // Fire those code on all service pages
+        'service_page': {
             init: function () {
                 // JavaScript to be fired on all pages
             },
             finalize: function () {
-                // JavaScript to be fired on all pages, after page specific JS is fired
+                // JavaScript to be fired on all service pages, after page specific JS is fired
 
-                $(function() {
-                    $('#img-enlarge').on('click', function() {
+                $(function () {
+                    $('#img-enlarge').on('click', function () {
                         $('.enlargeImageModalSource').attr('src', $(this).attr('src'));
                         $('#enlargeImageModal').modal('show');
                     });
@@ -169,6 +169,57 @@
 
             } // End finalize function
         }, // End page specific function
+        // Fire those code on all single project pages
+        'single_projects': {
+            init: function () {
+                // JavaScript to be fired on all pages
+
+
+
+                function showDevices() {
+                    if ($(window).width() < 768) {
+                        $('.show-all-devices').css({ "display" : "none" });
+                        $('.show-mobile-only').css({ "display" : "inherit" });
+                    } else {
+                        $('.show-all-devices').css({ "display" : "inherit" });
+                        $('.show-mobile-only').css({ "display" : "none" });
+                    }
+                }
+
+                $( window ).on('load', showDevices );
+                $( window ).on('resize', showDevices );
+
+            },
+            finalize: function () {
+                // JavaScript to be fired on all single project template pages, after page specific JS is fired
+
+                $("#switchDevice").click(function() {
+                    if ($(".device-wrapper").hasClass("desktop")) {
+                        $(".device-wrapper, .container").addClass("tablet").removeClass("desktop");
+                        $(".screenshot-desktop").css({ "display" : "none" });
+                        $(".screenshot-tablet").css({ "display" : "inherit" });
+                        $(".screenshot-mobile").css({ "display" : "none" });
+                    } else if ($(".device-wrapper").hasClass("mobile")) {
+                        $(".device-wrapper, .container").addClass("desktop").removeClass("mobile").removeClass("tablet");
+                        $(".screenshot-desktop").css({ "display" : "inherit" });
+                        $(".screenshot-tablet").css({ "display" : "none" });
+                        $(".screenshot-mobile").css({ "display" : "none" });
+                    } else if ($(".device-wrapper").hasClass("tablet")) {
+                        $(".device-wrapper, .container").addClass("mobile");
+                        $(".screenshot-desktop").css({ "display" : "none" });
+                        $(".screenshot-tablet").css({ "display" : "none" });
+                        $(".screenshot-mobile").css({ "display" : "inherit" });
+                    }
+
+                });
+
+
+            } // End finalize function
+        }, // End page specific function
+
+
+
+
     }; // End of DOM-based routing function
 
     // The routing fires all common scripts, followed by the page specific scripts.

@@ -37,14 +37,13 @@ function setup()
     // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
     // http://codex.wordpress.org/Function_Reference/add_image_size
     add_theme_support('post-thumbnails');
-    add_image_size('1920x700', 1920, 700, ['center', 'center']);
-    add_image_size('960x640', 960, 640, ['center', 'center']);
-    add_image_size('960x540', 960, 540, ['center', 'center']);
+    add_image_size('1920x700', 1920, 700, ['center', 'center']); // hero-image
     add_image_size('360x360', 360, 360);
-    add_image_size('960x540',960,540);
+    add_image_size('600x400',600,400); // screenshot-desktop
+    add_image_size('350x500',350,500); // screenshot-tablet
+    add_image_size('250x420',250,420); // screenshot-mobile
     add_image_size('800x800', 800, 800);
     add_image_size('800x450', 800, 450);
-    add_image_size('393x245', 393, 245);
     add_image_size('150x150', 150, 150);
     add_image_size('200x200', 200, 200,['center', 'center']);
     add_image_size('85x85', 85, 85);
@@ -154,8 +153,8 @@ function assets()
     }
 
     wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
-}
 
+}
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 
 

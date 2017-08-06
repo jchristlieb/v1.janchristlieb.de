@@ -80,3 +80,17 @@
     width:100px!important;
   }
 }
+
+
+#switchDevice {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: $body-color-darker;
+  border: 2px solid $main-color-lighter;
+  padding: .5rem .5rem;
+  &:hover {
+    background-color: $main-color;
+    border-color: $main-color-lighter;
+    color: $highlight-color;
+  }
+}

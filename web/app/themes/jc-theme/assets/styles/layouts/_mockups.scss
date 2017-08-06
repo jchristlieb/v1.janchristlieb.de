@@ -1,0 +1,225 @@
+
+section.project-gallery {
+
+  .content-container {
+    overflow: hidden;
+    height: 329px;
+    border-radius: 3px;
+    transition: all .7s ease;
+  }
+
+  .device-wrapper {
+
+    .screen-outer {
+      width: 600px;
+      height: 400px;
+      background-color: white;
+      border-radius: 10px;
+      border: 15px solid whitesmoke;
+      box-shadow: inset 0 -40px 0 0 whitesmoke, 0 3px 0 0 darken(whitesmoke, 10%);
+      z-index: 10;
+      position: relative;
+      transition: all .7s ease;
+
+      &:before, &:after {
+        transition: all .7s ease;
+      }
+    }
+    .screen-inner {
+      width: 100%;
+      height: 90%;
+      background-color: $body-color;
+      border-radius: 2px;
+      position: relative;
+      transition: all .7s ease;
+      //overflow: hidden;
+      padding-bottom: 20px;
+      border: 2px solid #cfcfcf;
+
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        transition: all .7s ease;
+      }
+
+      &:after {
+        height: 25px;
+        width: 25px;
+        border-radius: 100%;
+        background-color: darken(whitesmoke, 15%);
+        bottom: -40px;
+        left: 275px;
+        box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+        transition: all .2s ease;
+      }
+    }
+  }
+
+  .bottom {
+    height: 40px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: whitesmoke;
+    box-shadow: 0 3px 0 0 darken(whitesmoke, 10%);
+    margin-top: 40px;
+    margin-left: 153px;
+    position: relative;
+    z-index: 5;
+    transition: all .7s ease;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      transform-style: preserve-3d;
+      perspective: 100px;
+      transition: all .7s ease;
+    }
+
+    &:before {
+      background-color: whitesmoke;
+      height: 70px;
+      width: 50px;
+      transform: skew(10deg) translateZ(100px);
+      top: -50px;
+      right: 114px;
+      box-shadow: inset 0 13px 0 0 darken(whitesmoke, 10%), 0 2px 0 0 darken(whitesmoke, 10%);
+      border-radius: 0 0 2px 2px;
+    }
+
+    &:after {
+      background-color: whitesmoke;
+      height: 70px;
+      width: 50px;
+      transform: skew(-10deg) translateZ(100px);
+      left: 114px;
+      top: -50px;
+      box-shadow: inset 0 13px 0 0 darken(whitesmoke, 10%), 0 2px 0 0 darken(whitesmoke, 10%);
+      border-radius: 0 0 2px 2px;
+    }
+  }
+
+  .device-wrapper.tablet {
+
+    .content-container {
+      height: 410px;
+    }
+
+    .screen-outer {
+      width: 350px;
+      height: 500px;
+      border-top-width: 35px;
+
+      &:after {
+        content: '';
+        opacity: 0;
+        right: 32px;
+        background-color: darken(whitesmoke, 25%);
+        box-shadow: inset 0 0 3px 1px darken(whitesmoke, 40%);
+        height: 7px;
+        width: 7px;
+        top: -19px;
+        border-radius: 100%;
+        transition: all 0.5s ease;
+      }
+
+      &:before {
+        //opacity: 0;
+        height: 0;
+        width: 0;
+        content: '';
+      }
+    }
+
+    .screen-inner {
+      height: 92%;
+
+      &:after {
+        left: 145px
+      }
+
+      &:before {
+        top: -19px;
+        bottom: initial;
+        width: 8px;
+        height: 8px;
+        border-radius: 10px;
+        background-color: lighten(whitesmoke, 15%);
+        box-shadow: inset 0 0 0 2.5px darken(whitesmoke, 25%);
+        left: 151px
+      }
+    }
+
+    .bottom {
+      opacity: 0;
+
+      &:before, &:after {
+        opacity: 0;
+      }
+    }
+  }
+
+  .device-wrapper.mobile {
+
+    .content-container {
+      height: 346px;
+      overflow: hidden;
+    }
+
+    .screen-outer {
+      height: 420px;
+      width: 250px;
+      border-radius: 25px;
+
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        opacity: 1;
+      }
+
+      &:before {
+        width: 40px;
+        height: 6px;
+        background-color: darken(whitesmoke, 10%);
+        box-shadow: inset 0 .07em 0 1px darken(whitesmoke, 40%);
+        top: -18px;
+        border-radius: 10px;
+        left: 90px;
+        opacity: 1;
+      }
+
+      &:after {
+        right: 32px;
+        background-color: darken(whitesmoke, 25%);
+        box-shadow: inset 0 0 3px 1px darken(whitesmoke, 40%);
+        height: 7px;
+        width: 7px;
+        top: -19px;
+        border-radius: 100%;
+      }
+    }
+
+    .screen-inner {
+      border-radius: 0;
+      height: 94.5%;
+
+      &:before {
+        right: 15px;
+        left: initial;
+        height: 12px;
+        width: 12px;
+        box-shadow: inset 0 0 0 4px darken(whitesmoke, 25%);
+        top: -23px;
+      }
+
+      &:after {
+        width: 45px;
+        height: 14px;
+        border-radius: 10px;
+        bottom: -27px;
+        left: 85px;
+      }
+    }
+  }
+}
+

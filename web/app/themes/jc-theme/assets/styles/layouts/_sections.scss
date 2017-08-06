@@ -93,9 +93,40 @@ section.toc-contact-form {
 }
 
 section.project-gallery {
-  margin-top: 100px;
-  .carousel-item {
-    height: inherit;
+  .show-all-devices {
+    margin-top: 120px;
+    margin-bottom: 60px;
+    height: 450px;
+    display: none;
+    .container {
+      width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 20px;
+      transition: all .7s ease;
+      &.tablet {
+        width: 350px;
+      }
+      &.mobile {
+        width: 250px;
+      }
+    }
+  }
+  .show-mobile-only {
+    margin-top: 120px;
+    margin-bottom: 20px;
+    height: 450px;
+    display: none;
+    .screenshot-mobile {
+      display: inherit!important;
+    }
+  }
+  .screenshot-desktop {
+    display: inherit;
+  }
+  .screenshot-tablet,
+  .screenshot-mobile {
+    display: none;
   }
 }
 

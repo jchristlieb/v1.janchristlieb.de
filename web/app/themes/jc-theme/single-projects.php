@@ -1,20 +1,52 @@
 <section class="project-gallery">
-    <div class="container d-flex p-2 justify-content-center">
-        <div class="row">
-            <div class="col-12">
 
-                <?php
-                $screenshot_laptop = get_field('screenshot_desktop');
-                $size = "800x450";
-                $screenshot = $screenshot_laptop['sizes'][$size];
-                ?>
+    <?php
+    $desktop = get_field('screenshot_desktop');
+    $tablet = get_field('screenshot_tablet');
+    $mobile = get_field('screenshot_mobile');
+    ?>
 
-                <div class="screenshot-pc">
-                    <img src="<?php echo $screenshot ?>"
+    <div class="show-all-devices">
+        <div class="container">
+            <div class="device-wrapper desktop">
+                <div class="screen-outer">
+                    <div class="screen-inner">
+                        <div class="content-container">
+                            <img class="img-fluid screenshot-desktop"
+                                 src="<?php echo $desktop['sizes']['600x400'] ?>"
+                                 title="<?php echo $desktop['title'] ?>"
+                                 alt="<?php echo $desktop['alt'] ?>">
+                            <img class="img-fluid screenshot-tablet"
+                                 src="<?php echo $tablet['sizes']['350x500'] ?>"
+                                 title="<?php echo $tablet['title'] ?>"
+                                 alt="<?php echo $tablet['alt'] ?>">
+                            <img class="img-fluid screenshot-mobile"
+                                 src="<?php echo $mobile['sizes']['250x420'] ?>"
+                                 title="<?php echo $mobile['title'] ?>"
+                                 alt="<?php echo $mobile['alt'] ?>">
+                        </div>
+                    </div>
                 </div>
+                <div class="bottom"></div>
             </div>
         </div>
     </div>
+
+    <div class="show-mobile-only">
+        <div class="d-flex justify-content-center">
+            <div class="device-wrapper tablet mobile d-flex justify-content-center">
+                <div class="screen-outer">
+                    <div class="screen-inner">
+                        <div class="content-container">
+                            <img class="img-fluid screenshot-mobile"
+                                 src="<?php echo $mobile['sizes']['250x420'] ?>"
+                                 title="<?php echo $mobile['title'] ?>"
+                                 alt="<?php echo $mobile['alt'] ?>">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </section>
 
 <section class="project-info">
@@ -48,6 +80,9 @@
                 <?php endif; ?>
             </div>
             <div class="col-md-4 col-sm-12">
+                <div class="show-all-devices">
+                    <button type="button" id="switchDevice" class="btn btn-primary">Responsives Design testen</button>
+                </div>
                 <div class="project-box">
                     <div class="project-logo d-flex p-2 justify-content-center">
 
