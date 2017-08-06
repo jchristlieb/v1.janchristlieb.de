@@ -93,7 +93,7 @@
             }
         },
         // Fire those code on all service pages
-        'service_page': {
+        'page_template_template_service_page': {
             init: function () {
                 // JavaScript to be fired on all pages
             },

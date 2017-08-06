@@ -1,4 +1,4 @@
-<button type="button" style="display: none" class="btn-sidekick" id="toc-btn"></button>
+<button type="button" class="btn-sidekick" id="toc-btn"></button>
 
 <section class="toc">
     <div class="container">
