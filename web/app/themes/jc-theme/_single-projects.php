@@ -4,14 +4,48 @@
             <div class="col-12">
 
                 <?php
-                $screenshot_laptop = get_field('screenshot_desktop');
-                $size = "800x450";
-                $screenshot = $screenshot_laptop['sizes'][$size];
-                ?>
+                $images = get_field('project_gallery');
+                $count = 0;
+                $count1 = 0;
 
-                <div class="screenshot-pc">
-                    <img src="<?php echo $screenshot ?>"
-                </div>
+                if ($images) : ?>
+                    <div id="slider">
+                        <div id="project-carousel" class="carousel slide">
+
+                            <ol class="carousel-indicators">
+                                <?php foreach ($images as $image): ?>
+                                    <li data-target="#carousel" data-slide-to="<?php echo $count; ?>"
+                                        <?php if ($count == 0) : ?>class="active"<?php endif; ?>></li>
+                                    <?php
+                                    $count++;
+                                endforeach; ?>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <?php foreach ($images as $image): ?>
+                                    <div class="carousel-item<?php if ($count1 == 0) : echo ' active'; endif; ?>">
+                                        <img class="d-block img-fluid" src="<?php echo $image['sizes']['960x640']; ?>"
+                                             title="<?php echo $image['title']; ?>" alt="<?php echo $image['alt']; ?>"/>
+                                    </div>
+                                    <?php
+                                    $count1++;
+                                endforeach;
+                                ?>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
+                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+                    </div>
+                <?php endif; ?>
+
             </div>
         </div>
     </div>
@@ -79,3 +113,6 @@
         </div>
     </div>
 </section>
+
+
+
