@@ -29,7 +29,7 @@
 
                 ?>
 
-                <div class="col-md-6">
+                <div class="col-md-4 col-sm-6">
                     <a href="<?php the_permalink(); ?>">
                         <div class="card d-flex align-items-center" data-mh="teaser-card">
                             <img class="card-img-top img-fluid" src="<?php echo $project_logo ?>"
