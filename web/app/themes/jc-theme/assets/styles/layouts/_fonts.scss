@@ -27,8 +27,8 @@ h3 {
 
 p {
   font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 p.lead {
@@ -95,6 +95,12 @@ a, a:visited, a:hover, a:active, a:focus {
   p {
     font-size: 14px;
     line-height: 20px;
+  }
+}
+
+section.portfolio {
+  .card-footer p {
+    font-size: 16px;
   }
 }
 
