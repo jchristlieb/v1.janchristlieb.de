@@ -98,14 +98,12 @@
                              title="<?php echo $logo_title ?>" alt="<?php echo $logo_alt ?>">
                     </div>
                     <div class="project-about">
+                        <hr>
                         <p><?php echo the_field('project_about'); ?></p>
                         <?php if (get_field('project_url')) : ?>
+                            <hr>
                             <p><a class="project-link" href="<?php echo the_field('project_url') ?>"
                                   target="_blank"><?php echo the_field('project_url_anchor') ?></a></p>
-                        <?php else: ?>
-                        <?php endif; ?>
-                        <?php if (get_field('project_duration')) : ?>
-                            <p class="project-duration"><?php echo the_field('project_duration') ?></p>
                         <?php else: ?>
                         <?php endif; ?>
                     </div>
