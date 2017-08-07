@@ -39,6 +39,9 @@
                                 <h3 class="text-center"><?php echo the_field('project_title') ?></h3>
                                 <p><?php echo the_field('project_excerpt') ?></p>
                             </div>
+                            <div class="card-footer">
+                                <p><?php echo the_field('project_duration') ?></p>
+                            </div>
                         </div>
                     </a>
                 </div>

@@ -1,9 +1,23 @@
-.portfolio.card {
-  img.card-img-top {
-    padding: 20px;
-  }
-  .card-block {
-    padding-top: 0;
+.portfolio {
+  .card {
+    .card-img-top {
+      padding: 20px 20px 10px 20px;
+    }
+    .card-block {
+      padding-top: 0;
+    }
+    .card-footer {
+      width: 100%;
+      text-align: center;
+      p {
+        margin-bottom: 0;
+      }
+      p:before {
+        font-family: FontAwesome;
+        content: "\f073";
+        padding-right: 5px;
+      }
+    }
   }
 }
 
