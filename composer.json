@@ -1,28 +1,16 @@
 {
-  "name": "roots/bedrock",
+  "name": "Jan Christlieb",
   "type": "project",
   "license": "MIT",
-  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
-  "homepage": "https://roots.io/bedrock/",
+  "description": "Website for Jan Christlieb",
+  "homepage": "https://janchristlieb.de",
   "authors": [
     {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+      "name": "Jan Christlieb",
+      "email": "mail@janchristlieb.de",
+      "homepage": "https://janchristlieb.de"
     }
   ],
-  "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
-  ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
-  },
   "config": {
     "preferred-install": "dist"
   },
@@ -35,7 +23,7 @@
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.6.1",
+        "version": "5.5.14",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -50,17 +38,18 @@
   ],
   "require": {
     "php": ">=5.6",
-    "composer/installers": "~1.0.12",
+    "composer/installers": "~1.2.0",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.7.3",
     "oscarotero/env": "^1.0",
+    "johnpbloch/wordpress": "4.8",
     "roots/wp-password-bcrypt": "1.0.0",
+    "roots/soil": "3.7.1",
     "wpackagist-plugin/custom-post-type-ui": "*",
     "wpackagist-plugin/contact-form-7": "*",
     "wpackagist-plugin/regenerate-thumbnails": "*",
-    "advanced-custom-fields/advanced-custom-fields-pro": "5.6.1",
-    "wpackagist-plugin/show-current-template": "^0.3.0",
-    "wpackagist-plugin/organize-media-library": "6.05"
+    "wpackagist-plugin/organize-media-library": "^6.05",
+    "advanced-custom-fields/advanced-custom-fields-pro": "5.5.14",
+    "wpackagist-plugin/show-current-template": "^0.3.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
@@ -74,6 +63,9 @@
     "wordpress-install-dir": "web/wp"
   },
   "scripts": {
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ],
     "test": [
       "vendor/bin/phpcs"
     ]
