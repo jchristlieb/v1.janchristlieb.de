@@ -1,9 +1,9 @@
 <nav id="primary-navigation" class="navbar fixed-top navbar-toggleable-sm navbar-light nav-bg-default">
-    <div class="container">
+    <div class="container ">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
         </button>
         <a class="navbar-brand" href="<?= esc_url(home_url('/#teasers')); ?>"><img class="nav-img"
                                                                                    src="<?= get_stylesheet_directory_uri(); ?>/dist/images/jc-logo-white.png"></a>

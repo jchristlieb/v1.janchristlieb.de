@@ -3,6 +3,7 @@ footer {
   background-color: $main-color;
   background: linear-gradient(1deg,$main-color 33%,$main-color-darker 99%);
   .social-area {
+    padding-top: 20px!important;
     .fa-twitter, .fa-github, .fa-xing, .fa-google-plus {
       color: $text-color;
       &:hover {
@@ -10,18 +11,34 @@ footer {
       }
     }
   }
-  .legal-area {
+  .legal-area, .social-area {
     padding: 10px;
   }
 }
 
 // footer sidebar styles
 footer {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      display: inline-block;
+      &:after {
+        content: "|";
+        padding-left: 15px;
+        color: $text-color;
+      }
+      &:last-of-type:after {
+        content: normal;
+      }
+    }
+  }
   .sb-social, .sb-copyright, .sb-imprint {
     padding: 10px;
     vertical-align: middle;
     p {
       margin: 0;
+      color: $body-color;
     }
   }
   .sb-imprint {

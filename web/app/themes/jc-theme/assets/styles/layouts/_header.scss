@@ -6,7 +6,7 @@
 
 .nav-bg-scroll {
   background-color: $main-color;
-  height: 60px;
+  height: 65px;
   opacity: 1!important;
   -webkit-box-shadow: 0 2px 20px -5px $main-color;
   -moz-box-shadow: 0 2px 20px -5px $main-color;
@@ -14,23 +14,28 @@
   .nav-img {
     max-height: 35px!important;
   }
-  button.navbar-toggler {
-    margin: 9px!important;
-  }
 }
 
 // default nav behavior
+
+nav .container {
+  padding: 0 40px;
+}
+
 .navbar {
   padding: 0;
   .navbar-light .navbar-nav .active > .nav-link {
     color: $text-color;
   }
-  .nav-img {
-    max-height: 50px;
-    margin: 12px 0;
+  .navbar-brand {
+    padding-bottom: 0;
+    .nav-img {
+      max-height: 50px;
+      margin: 12px 35px;
+    }
   }
   button.navbar-toggler {
-    margin: 15px;
+    margin: 12px 25px;
   }
   .dropdown-item {
     padding: 2px;
@@ -118,6 +123,15 @@
     background: transparent !important;
     background-color: transparent !important;
     color: $text-color;
+  }
+  button {
+    outline: none!important;
+  }
+  .navbar-toggler {
+    border: none;
+    .fa-bars, .fa-times {
+      color: $text-color;
+    }
   }
 }
 

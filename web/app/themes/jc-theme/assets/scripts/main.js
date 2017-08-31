@@ -24,6 +24,11 @@
             finalize: function () {
                 // JavaScript to be fired on all pages, after page specific JS is fired
 
+                // Navbar Toggle switch between bars and x
+                $('.navbar-toggler').click(function(){
+                    $(this).find('i').toggleClass('fa-bars fa-times');
+                });
+
 
                 // If hover on .dropdown add .highlight to parent menu item
                 $(document).ready(function(){
@@ -81,7 +86,7 @@
                 printGreeting(
                     'about',
                     '<h1 class="introduction">Hi, ich bin Jan</h1>' +
-                    '<p class="lead">Ich entwickle Webseiten und digitale Marketing Strategien. Interessiert? <a class="lets-talk" href="#contact">Lass uns reden</a></p>',
+                    '<p class="lead">Ich entwickle <a href="#teasers">Webseiten</a> und digitale <a href="#teasers">Marketing Strategien</a>. Interessiert? <a class="lets-talk" href="#contact">Lass uns reden</a></p>',
                     50
                 );
 
