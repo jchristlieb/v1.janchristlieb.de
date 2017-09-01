@@ -6,7 +6,7 @@
 
 .nav-bg-scroll {
   background-color: $main-color;
-  opacity: 1!important;
+  opacity: 1 !important;
   -webkit-box-shadow: 0 2px 20px -5px $main-color;
   -moz-box-shadow: 0 2px 20px -5px $main-color;
   box-shadow: 0 2px 20px -5px $main-color;
@@ -18,11 +18,13 @@ nav .container {
   padding: 0 40px;
 }
 
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open > .nav-link {
+  color: $highlight-color;
+  font-weight: bold;
+}
+
 .navbar {
   padding: 0;
-  .navbar-light .navbar-nav .active > .nav-link {
-    color: $text-color;
-  }
   .navbar-brand {
     padding: 0;
     margin: 0;
@@ -67,9 +69,6 @@ nav .container {
           background-color: $body-color;
           border-radius: .25rem;
         }
-        &:active {
-          color: $text-color;
-        }
       }
     }
   }
@@ -102,7 +101,7 @@ nav .container {
     color: $text-color;
   }
   button {
-    outline: none!important;
+    outline: none !important;
   }
   .navbar-toggler {
     border: none;
@@ -116,7 +115,7 @@ nav .container {
     border-bottom: 2px solid $text-color;
   }
   .nav-img {
-    margin-left: 35px!important;
+    margin-left: 35px !important;
   }
 }
 

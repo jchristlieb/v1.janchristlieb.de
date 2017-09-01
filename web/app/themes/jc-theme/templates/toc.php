@@ -3,7 +3,7 @@
 <section class="toc">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7 col-md-9 col-sm-12">
+            <div class="col-lg-8 col-md-10 col-sm-12">
                 <div class="toc-menu">
                     <div class="card-header">
                         <h3 class="anchor" id="toc"><i class="fa fa-bars " aria-hidden="true"></i>
