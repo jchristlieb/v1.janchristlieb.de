@@ -6,14 +6,10 @@
 
 .nav-bg-scroll {
   background-color: $main-color;
-  height: 65px;
   opacity: 1!important;
   -webkit-box-shadow: 0 2px 20px -5px $main-color;
   -moz-box-shadow: 0 2px 20px -5px $main-color;
   box-shadow: 0 2px 20px -5px $main-color;
-  .nav-img {
-    max-height: 35px!important;
-  }
 }
 
 // default nav behavior
@@ -28,10 +24,11 @@ nav .container {
     color: $text-color;
   }
   .navbar-brand {
-    padding-bottom: 0;
+    padding: 0;
+    margin: 0;
     .nav-img {
       max-height: 50px;
-      margin: 12px 35px;
+      margin: 12px 0;
     }
   }
   button.navbar-toggler {
@@ -51,25 +48,9 @@ nav .container {
 }
 
 // non-toggle nav behavior
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .navbar-light {
     .navbar-nav {
-      .menu-item-has-children:hover {
-        .nav-link {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
-        .dropdown-menu {
-          display: block;
-          margin: 0 !important;
-          border: none !important;
-          border-top-left-radius: 0 !important;
-          .dropdown-item:active, .dropdown-item.active {
-            background-color: $highlight-color;
-            color: $main-color-darker;
-          }
-        }
-      }
       // js script adds .highlight to parent nav-link when cursor hovers dropdown-menu
       .highlight {
         background-color: $body-color;
@@ -80,6 +61,7 @@ nav .container {
       }
       .nav-link {
         color: $text-color;
+        margin: 0 5px;
         &:hover {
           color: $text-color-var;
           background-color: $body-color;
@@ -94,29 +76,24 @@ nav .container {
 }
 
 // toggle nav behaviour
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .navbar-light .navbar-nav {
     background: $main-color;
     padding: 20px 35px;
     .nav-link {
       color: $text-color;
+      margin: 10px 0;
+      &:before {
+        font-family: FontAwesome;
+        content: "\f054";
+        padding: 0 10px;
+      }
       &:hover {
         color: $text-color-var;
         background-color: $body-color;
+        max-width: 250px;
+        border-radius: 5px;
       }
-    }
-  }
-  .dropdown-menu {
-    display: inline-block !important;
-    background: none;
-    border: none;
-    .dropdown-item.active, dropdown-item:active, dropdown-item:focus, .dropdown-item:visited {
-      background-color: transparent;
-      color: $text-color !important;
-    }
-    .dropdown-item:hover {
-      color: $text-color-var !important;
-      background-color: $body-color;
     }
   }
   .highlight {
@@ -129,9 +106,17 @@ nav .container {
   }
   .navbar-toggler {
     border: none;
+    margin: 12px;
+    padding: 0;
     .fa-bars, .fa-times {
       color: $text-color;
     }
+  }
+  .navbar-collapse .show {
+    border-bottom: 2px solid $text-color;
+  }
+  .nav-img {
+    margin-left: 35px!important;
   }
 }
 
