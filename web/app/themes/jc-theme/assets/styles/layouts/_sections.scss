@@ -7,10 +7,7 @@ section.container.background {
   background-color: $body-color;
   border-radius: 5px 5px 0 0;
   padding: 0;
-}
-
-@media screen and (max-width: 575px) {
-  section.container.background {
+  @media screen and (max-width: 575px) {
     margin-bottom: 0;
   }
 }
@@ -27,7 +24,7 @@ section.welcome {
   display: flex;
   align-items: center;
   background-color: $main-color;
-  background: linear-gradient(10deg, $main-color-lighter 2%, $main-color-darker 33%, $main-color 77%);
+  background: linear-gradient(45deg, $body-color 2%, $main-color-darker 33%, $main-color 77%);
   height: calc(100vh - 0px);
   position: relative;
   .lets-talk {
@@ -118,7 +115,7 @@ section.project-gallery {
     height: 450px;
     display: none;
     .screenshot-mobile {
-      display: inherit!important;
+      display: inherit !important;
     }
   }
   .screenshot-desktop {
@@ -154,7 +151,7 @@ section.project-info {
     }
   }
   img {
-      padding-top: 20px;
+    padding-top: 20px;
   }
   .project-about {
     padding: 10px 25px;
