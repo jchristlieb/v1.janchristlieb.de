@@ -6,8 +6,7 @@
             <div class="col-lg-8 col-md-10 col-sm-12">
                 <div class="toc-menu">
                     <div class="card-header">
-                        <h3 class="anchor" id="toc"><i class="fa fa-bars " aria-hidden="true"></i>
-                            Auf einen Blick</h3>
+                        <h3 class="anchor" id="toc">Auf einen Blick</h3>
                     </div>
                     <ul class="toc-list">
                         <?php while (have_rows('content_block_a')) : the_row(); ?>

@@ -4,6 +4,11 @@
   h3 {
     color: $text-color;
     margin-bottom: 0;
+    &:before {
+      font-family: FontAwesome;
+      content: "\f0c9";
+      padding-right: 15px;
+    }
   }
   h4 {
     color: $text-color-var;

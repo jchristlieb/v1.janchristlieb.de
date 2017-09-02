@@ -1,4 +1,4 @@
-<button type="button" class="btn-sidekick custom-tooltip" id="qa-btn" data-toggle="modal"
+<button type="button" class="btn-sidekick btn-sidekick-mobile custom-tooltip" id="qa-btn" data-toggle="modal"
         data-target="#qa-modal"></button>
 
 <section class="qa-modal">

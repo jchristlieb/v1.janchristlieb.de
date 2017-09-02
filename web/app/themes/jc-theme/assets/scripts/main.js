@@ -126,11 +126,11 @@
 
 
                 // Resize and reposition SideKickButtons at SM Screen Size
-                $(window).resize(function () {
+                $(document).ready(function () {
                     var sidekick_btn = $("#toc-btn, #qa-btn");
 
                     if ($(window).width() < 576) {
-                        sidekick_btn.removeClass('fa-2x','btn-sidekick');
+                        sidekick_btn.removeClass('fa-2x');
                         sidekick_btn.addClass('btn-sidekick-mobile');
                     } else {
                         sidekick_btn.addClass('fa-2x','btn-sidekick');
