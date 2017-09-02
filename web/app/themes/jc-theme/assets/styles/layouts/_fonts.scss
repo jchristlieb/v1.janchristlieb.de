@@ -44,7 +44,7 @@ a, a:visited, a:hover, a:active, a:focus {
   h1 {
     font-weight: 600;
     font-size: 28px;
-    line-height: 30px;
+    line-height: 60px; // to prevent that the background interfere with each other on line breaks
   }
 
   h2 {

@@ -8,7 +8,7 @@
 
     <div class="show-all-devices">
         <div class="container">
-            <div class="device-wrapper desktop">
+            <div id="device" class="device-wrapper desktop">
                 <div class="screen-outer">
                     <div class="screen-inner">
                         <div class="content-container">

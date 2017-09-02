@@ -24,6 +24,18 @@
             finalize: function () {
                 // JavaScript to be fired on all pages, after page specific JS is fired
 
+                // do not show the a title attribute on mouse-over but keep it for screen readers
+                $(document).ready(function(){
+                    $("a").hover(function(){
+                        $(this).attr("rel", $(this).attr("title"));
+                        $(this).removeAttr("title");
+                    }, function(){
+                        $(this).attr("title", $(this).attr("rel"));
+                        $(this).removeAttr("rel");
+                    });
+                });
+
+
                 // Navbar Toggle switch between bars and x
                 $('.navbar-toggler').click(function(){
                     $(this).find('i').toggleClass('fa-bars fa-times');
@@ -198,7 +210,7 @@
             finalize: function () {
                 // JavaScript to be fired on all single project template pages, after page specific JS is fired
 
-                $("#switchDevice").click(function() {
+                $("#switchDevice, #device").click(function() {
                     if ($(".device-wrapper").hasClass("desktop")) {
                         $(".device-wrapper, .container").addClass("tablet").removeClass("desktop");
                         $(".screenshot-desktop").css({ "display" : "none" });
