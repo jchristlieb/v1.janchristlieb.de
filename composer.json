@@ -49,7 +49,8 @@
     "wpackagist-plugin/regenerate-thumbnails": "*",
     "wpackagist-plugin/organize-media-library": "^6.05",
     "advanced-custom-fields/advanced-custom-fields-pro": "5.5.14",
-    "wpackagist-plugin/show-current-template": "^0.3.0"
+    "wpackagist-plugin/show-current-template": "^0.3.0",
+    "wpackagist-plugin/bwp-google-xml-sitemaps": "1.4.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
