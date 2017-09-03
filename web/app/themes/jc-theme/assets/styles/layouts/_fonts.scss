@@ -36,8 +36,12 @@ p.lead {
   line-height: 34px;
 }
 
-a, a:visited, a:hover, a:active, a:focus {
+a, a:visited, a:active, a:focus {
   color: $main-color;
+  font-weight: 400;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 @media screen and (max-width: 575px) {
