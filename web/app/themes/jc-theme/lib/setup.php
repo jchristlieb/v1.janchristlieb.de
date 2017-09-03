@@ -44,8 +44,8 @@ function setup()
     add_image_size('250x420',250,420); // screenshot-mobile
     add_image_size('800x800', 800, 800);
     add_image_size('800x450', 800, 450);
+    add_image_size('200x200', 200, 200); // sidebar image
     add_image_size('150x150', 150, 150); // project-logo
-    add_image_size('200x200', 200, 200,['center', 'center']);
     add_image_size('85x85', 85, 85); // headline-icon
     add_image_size('50x50', 50, 50);
 
@@ -136,6 +136,7 @@ function display_sidebar()
         is_page_template('template-portfolio.php'),
         is_page_template('template-portfolio-overview.php'),
         is_page_template('template-default-content.php'),
+        is_page_template('template-content-sidebar.php'),
     ]);
 
     return apply_filters('sage/display_sidebar', $display);

@@ -1,3 +1,5 @@
+Sitemap: http://janchristlieb.de/sitemapindex.xml
+
 User-agent: *
 Disallow: /wp-admin
 Disallow: /wp-includes

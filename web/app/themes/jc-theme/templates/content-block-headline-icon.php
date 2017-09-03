@@ -1,4 +1,4 @@
-<!--This template uses optional icons in front of hs-->
+<!--This template uses optional icons in front of headline-->
 
 <section class="content">
     <div class="container">
