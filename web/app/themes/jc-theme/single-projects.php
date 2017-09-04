@@ -68,6 +68,7 @@
                 <div class="project-item">
                     <h2><?php echo the_field('technology_label') ?></h2>
                     <div class="divider"></div>
+                    <p><?php echo the_field('technology_description') ?></p>
                     <ul>
                         <?php while (has_sub_field('technology')) {
                             $tech_item = get_sub_field('tech_item'); ?>
