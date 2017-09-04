@@ -83,7 +83,7 @@
                 <div class="show-all-devices">
                     <button type="button" id="switchDevice" class="btn btn-primary">Responsives Design testen</button>
                 </div>
-                <div class="project-box">
+                <div class="sidebar-box">
                     <div class="project-logo d-flex p-2 justify-content-center">
 
                         <?php

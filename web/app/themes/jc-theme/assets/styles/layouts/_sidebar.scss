@@ -1,1 +1,23 @@
+.sidebar-box {
+  border-radius: .25rem;
+  border: 2px solid $main-color-lighter;
+  background: $body-color-darker;
+  display: table;
+  padding: 20px;
+  width:100%;
+}
 
+ul.social-networks {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    float: left;
+    padding-right: 20px;
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+  .fa {
+    font-size: 22px;
+  }
+}

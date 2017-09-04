@@ -128,12 +128,6 @@ section.project-gallery {
 }
 
 section.project-info {
-  .project-box {
-    border-radius: .25rem;
-    border: 2px solid $main-color-lighter;
-    background: $body-color-darker;
-    display: table;
-  }
   .project-item {
     padding-bottom: 20px;
     margin-right: 20px;
@@ -154,15 +148,14 @@ section.project-info {
     padding-top: 20px;
   }
   .project-about {
-    padding: 10px 25px;
     p, a {
       font-size: 16px;
       font-weight: lighter;
     }
     .project-link:before {
       font-family: FontAwesome;
-      content: "\f105";
-      font-size: 20px;
+      content: "\f0c1";
+      font-size: 15px;
       padding-right: 10px;
     }
   }
