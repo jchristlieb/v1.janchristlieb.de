@@ -102,8 +102,9 @@
                         <p><?php echo the_field('project_about'); ?></p>
                         <?php if (get_field('project_url')) : ?>
                             <hr>
-                            <p><a class="project-link" href="<?php echo the_field('project_url') ?>"
-                                  target="_blank"><?php echo the_field('project_url_anchor') ?></a></p>
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                            <a class="project-link" href="<?php echo the_field('project_url') ?>"
+                                  target="_blank"><?php echo the_field('project_url_anchor') ?></a>
                         <?php else: ?>
                         <?php endif; ?>
                     </div>

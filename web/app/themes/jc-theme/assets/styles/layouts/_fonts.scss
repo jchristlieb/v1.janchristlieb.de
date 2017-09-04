@@ -102,6 +102,12 @@ a, a:visited, a:active, a:focus {
   }
 }
 
+.sidebar-content {
+  a {
+    font-weight: 300;
+  }
+}
+
 section.portfolio {
   .card-footer p {
     font-size: 16px;
