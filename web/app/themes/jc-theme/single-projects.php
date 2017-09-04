@@ -57,6 +57,13 @@
                     <h2><?php echo the_field('project_description_label') ?></h2>
                     <div class="divider"></div>
                     <p><?php echo the_field('project_description') ?></p>
+                    <ul>
+                        <?php while (has_sub_field('project_tasks')) {
+                            $task = get_sub_field('task'); ?>
+                            <li class="project-task"><?php echo $task ?></li>
+
+                        <?php } ?>
+                    </ul>
                 </div>
                 <div class="project-item">
                     <h2><?php echo the_field('technology_label') ?></h2>
@@ -103,7 +110,7 @@
                         <?php if (get_field('project_url')) : ?>
                             <hr>
                             <i class="fa fa-external-link" aria-hidden="true"></i>
-                            <a class="project-link" href="<?php echo the_field('project_url') ?>"
+                            <a href="<?php echo the_field('project_url') ?>"
                                   target="_blank"><?php echo the_field('project_url_anchor') ?></a>
                         <?php else: ?>
                         <?php endif; ?>

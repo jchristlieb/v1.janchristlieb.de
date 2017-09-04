@@ -134,11 +134,19 @@ section.project-info {
     ul {
       list-style: none;
       padding: 0;
-      li {
+      li.tech-item {
         padding: 10px;
         &:before {
           font-family: FontAwesome;
           content: "\f02b";
+          padding-right: 10px;
+        }
+      }
+      li.project-task {
+        padding: 10px;
+        &:before {
+          font-family: FontAwesome;
+          content: "\f00c";
           padding-right: 10px;
         }
       }
