@@ -30,3 +30,22 @@ ul.prev-next-nav {
     font-size: 22px;
   }
 }
+
+.project-item ul {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 5px 5px 5px 0;
+    &:before {
+      font-family: FontAwesome;
+      padding-right: 10px;
+      color: $text-color-var;
+    }
+  }
+  li.tech-item:before {
+      content: "\f02b";
+  }
+  li.project-task:before {
+    content: "\f00c";
+    }
+}
