@@ -13,7 +13,9 @@
             <?php $args = array(
                 'post_type' => 'projects',
                 'post_status' => 'publish',
-                'posts_per_page' => 10
+                'posts_per_page' => 10,
+                'orderby' => 'title',
+                'order' => 'DESC',
             );
             ?>
 
@@ -29,7 +31,7 @@
 
                 ?>
 
-                <div class="col-md-4 col-sm-6">
+                <div class="col-xl-4 col-md-6 col-sm-12">
                     <a href="<?php the_permalink(); ?>">
                         <div class="card d-flex align-items-center" data-mh="teaser-card">
                             <img class="card-img-top img-fluid" src="<?php echo $project_logo ?>"
@@ -38,9 +40,6 @@
                                 <hr>
                                 <h3 class="text-center"><?php echo the_field('project_title') ?></h3>
                                 <p><?php echo the_field('project_excerpt') ?></p>
-                            </div>
-                            <div class="card-footer">
-                                <p><?php echo the_field('project_duration') ?></p>
                             </div>
                         </div>
                     </a>
