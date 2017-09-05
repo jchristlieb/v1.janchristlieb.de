@@ -13,6 +13,8 @@
         <?php $args = array(
             'post_type' => 'projects',
             'post_status' => 'publish',
+            'orderby' => 'post_title',
+            'order' => 'asc',
             'posts_per_page' => 10
         );
         ?>

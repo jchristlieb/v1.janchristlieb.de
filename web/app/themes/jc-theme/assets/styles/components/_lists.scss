@@ -1,0 +1,32 @@
+ul.social-networks {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    float: left;
+    padding-right: 20px;
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+  .fa {
+    font-size: 22px;
+  }
+}
+
+ul.prev-next-nav {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    float: left;
+    padding: 20px;
+  }
+  li.pre-item, li.next-item {
+    width: 40%;
+  }
+  li.overview {
+    width: 20%;
+  }
+  .fa {
+    font-size: 22px;
+  }
+}

@@ -31,7 +31,6 @@
             </div>
         </div>
     </div>
-
     <div class="show-mobile-only">
         <div class="d-flex justify-content-center">
             <div class="device-wrapper tablet mobile d-flex justify-content-center">
@@ -86,6 +85,7 @@
                     </div>
                 <?php else: ?>
                 <?php endif; ?>
+
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="show-all-devices">
@@ -112,10 +112,17 @@
                             <hr>
                             <i class="fa fa-external-link" aria-hidden="true"></i>
                             <a href="<?php echo the_field('project_url') ?>"
-                                  target="_blank"><?php echo the_field('project_url_anchor') ?></a>
+                               target="_blank"><?php echo the_field('project_url_anchor') ?></a>
                         <?php else: ?>
                         <?php endif; ?>
                     </div>
+                </div>
+                <div class="portfolio-nav">
+                    <ul class="prev-next-nav d-flex justify-content-center">
+                        <li class="pre-item"><?php previous_post_link('%link', 'vorheriges Projekt', false); ?></li>
+                        <li class="overview align-self-center"><a href="/index.php?p=139"><i class="fa fa-th" aria-hidden="true"></i></a></li>
+                        <li class="next-item"><?php next_post_link('%link', 'nächstes Projekt', false) ?></li>
+                    </ul>
                 </div>
             </div>
         </div>

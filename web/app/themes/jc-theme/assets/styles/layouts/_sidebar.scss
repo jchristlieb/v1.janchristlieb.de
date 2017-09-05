@@ -7,17 +7,13 @@
   width:100%;
 }
 
-ul.social-networks {
-  list-style-type: none;
-  padding-left: 0;
-  li {
-    float: left;
-    padding-right: 20px;
-    &:last-of-type {
-      padding-right: 0;
-    }
-  }
-  .fa {
-    font-size: 22px;
+.portfolio-nav {
+  margin-top: 20px;
+  border-radius: .25rem;
+  border: 2px solid $main-color-lighter;
+  background: $body-color-darker;
+  width:100%;
+  .d-flex {
+    margin: 0;
   }
 }
