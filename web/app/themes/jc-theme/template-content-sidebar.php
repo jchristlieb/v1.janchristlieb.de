@@ -39,9 +39,6 @@ get_template_part('templates/site-intro');
     </div>
 </section>
 
-<?php
-get_template_part('templates/contact-form');
-?>
 
 
 
