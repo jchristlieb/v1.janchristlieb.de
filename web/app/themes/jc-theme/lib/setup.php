@@ -135,7 +135,7 @@ function display_sidebar()
         is_page_template('template-service-overview.php'),
         is_page_template('template-portfolio.php'),
         is_page_template('template-portfolio-overview.php'),
-        is_page_template('template-default-content.php'),
+        is_page_template('template-content-fullscreen.php'),
         is_page_template('template-content-sidebar.php'),
     ]);
 
