@@ -41,6 +41,15 @@ section.welcome {
 section.teasers {
   padding-top: 150px;
   padding-bottom: 100px;
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+section.portfolio {
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 section.testimonials {
