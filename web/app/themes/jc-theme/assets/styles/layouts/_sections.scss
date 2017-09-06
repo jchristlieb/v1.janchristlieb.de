@@ -47,7 +47,7 @@ section.teasers {
 }
 
 section.portfolio {
-  a:hover {
+  a:hover, a:active, a:visited {
     text-decoration: none;
   }
 }
