@@ -18,10 +18,9 @@
   padding-top: 25px;
 }
 
-*:not(input.field) {
-  -webkit-user-select: none!important;
-  -khtml-user-select: none!important;
-  -moz-user-select: none!important;
-  -ms-user-select: none!important;
-  user-select: none!important;
+input[draggable="true"] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
