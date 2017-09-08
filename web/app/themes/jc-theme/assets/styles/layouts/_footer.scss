@@ -1,51 +1,37 @@
 
 // general footer styles
 footer {
+  padding: 20px;
   background-color: $main-color;
   background: linear-gradient(1deg,$main-color 33%,$main-color-darker 99%);
-  .social-area {
-    padding-top: 20px!important;
-    .fa-twitter, .fa-github, .fa-xing, .fa-google-plus {
+  .social-media {
+    .fa {
       color: $text-color;
+      font-size: 40px;
+      margin: 20px;
       &:hover {
         color: $highlight-color-lighter;
       }
     }
   }
-  .legal-area, .social-area {
-    padding: 10px;
-  }
-}
-
-// footer sidebar styles
-footer {
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-    li {
-      display: inline-block;
-      &:after {
-        content: "|";
-        padding-left: 15px;
-        color: $text-color;
-      }
-      &:last-of-type:after {
-        content: normal;
-      }
+  .copyright {
+    padding: 20px;
+    padding-left: 35px;
+    @media screen and (max-width: 767px) {
+      padding-left: 20px;
+    }
+    color: $text-color;
+    .owner {
+      padding-top: 4px;
     }
   }
-  .sb-social, .sb-copyright, .sb-imprint {
-    padding: 10px;
-    vertical-align: middle;
-    p {
-      margin: 0;
-      color: $body-color;
+  .imprint {
+    padding: 20px;
+    padding-right: 40px;
+    @media screen and (max-width: 767px) {
+    padding-right: 20px;
     }
-  }
-  .sb-imprint {
-    .link {
-      padding-left: 10px;
-    }
+    @include list-inline-sep("|");
     a {
       color: $body-color;
       text-decoration: none;
@@ -54,22 +40,10 @@ footer {
       }
     }
   }
-  .sb-social {
-    list-style-type: none;
-    padding: 0;
-    li {
-      display: inline-block;
-      padding: 20px;
-    }
-  }
 }
 
+
+
 // footer mobile styles
-@media (max-width: 575px) {
-  footer {
-    .sb-imprint {
-      margin-bottom: 20px;
-    }
-  }
-}
+@media (max-width: 575px) {  }
 

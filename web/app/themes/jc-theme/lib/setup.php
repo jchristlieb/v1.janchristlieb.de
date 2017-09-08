@@ -78,23 +78,6 @@ function widgets_init()
         'after_title' => '</h3>'
     ]);
 
-    register_sidebar([
-        'name' => __('Footer Copyright', 'sage'),
-        'id' => 'sidebar-copyright',
-        'before_widget' => '<div class="sb-copyright">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
-    ]);
-
-    register_sidebar([
-        'name' => __('Footer Social', 'sage'),
-        'id' => 'sidebar-social',
-        'before_widget' => '<div class="sb-social">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
-    ]);
 
     register_sidebar([
         'name' => __('Portfolio', 'sage'),
@@ -103,15 +86,6 @@ function widgets_init()
         'after_widget' => '</section>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
-    ]);
-
-    register_sidebar([
-        'name'          => __('Footer Imprint', 'sage'),
-        'id'            => 'sidebar-imprint',
-        'before_widget' => '<div class="sb-imprint">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h3>',
-        'after_title'   => '</h3>'
     ]);
 
 }

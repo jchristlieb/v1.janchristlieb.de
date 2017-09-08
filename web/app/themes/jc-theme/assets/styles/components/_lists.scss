@@ -43,10 +43,37 @@ ul.prev-next-nav {
     }
   }
   li.tech-item:before {
-      content: "\f02b";
+    content: "\f02b";
   }
   li.project-task:before {
     content: "\f00c";
-    }
+  }
 }
 
+ul.list-inline {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+  }
+}
+
+@mixin list-inline-sep($sep-item) {
+  ul.list-inline-sep {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    li {
+      display: inline-block;
+      &:after {
+        content: $sep-item;
+        margin: 0 9px 0 10px;
+        color: $text-color;
+      }
+      &:last-of-type:after {
+        content: normal;
+      }
+    }
+  }
+}
