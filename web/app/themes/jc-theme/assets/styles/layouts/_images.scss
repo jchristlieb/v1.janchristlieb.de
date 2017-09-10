@@ -7,10 +7,10 @@
   cursor: zoom-in;
   margin-top: 90px;
   .img-description {
-    position: absolute;
+    float: left;
     background: $body-color-darker;
     padding: 10px;
-    width: 100%;
+    max-width: 364px;
     border: 2px solid $body-color-darker;
     p {
       margin: 0;

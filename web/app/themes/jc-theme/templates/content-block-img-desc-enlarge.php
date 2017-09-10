@@ -44,7 +44,7 @@
 
 
                             <?php if ($image) : ?>
-                            <div class="col-md-4 d-inline-flex flex-column justify-content-top align-items-center<?php if ($i % 2 == 0) echo ' pull-md-8' ?>">
+                            <div class="sidebar-image col-md-4 d-inline-flex flex-column justify-content-top align-items-center<?php if ($i % 2 == 0) echo ' pull-md-8' ?>">
                                 <a href="#img-modal-<?php echo $i ?>" data-toggle="modal">
                                     <div class="img-enlarge justify-content-top align-items-center" id="img-enlarge">
                                         <?php if ($image_desc) : ?>
