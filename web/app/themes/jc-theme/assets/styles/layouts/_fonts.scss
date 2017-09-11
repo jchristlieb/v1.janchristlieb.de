@@ -10,7 +10,7 @@ h1 {
   display: inline;
   color: $text-color!important;
   background-color: $main-color;
-  background: linear-gradient(7deg,#799cb0,#1a4762 55%,#2e5c77 99%);
+  background: linear-gradient(55deg,#799cb0,#1a4762 99%,#2e5c77 99%);
   padding: 10px 20px;
 }
 
@@ -82,6 +82,7 @@ a, a:visited, a:active, a:focus {
     font-family: 'Special Elite', cursive;
     color: $text-color;
     background-color: transparent;
+    background: transparent;
     padding: 0;
   }
   a {
