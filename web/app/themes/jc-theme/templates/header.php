@@ -6,7 +6,7 @@
             <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
         </button>
         <a class="navbar-brand" href="<?= esc_url(home_url('/#teasers')); ?>"><img class="nav-img"
-                                                                                   src="<?= get_stylesheet_directory_uri(); ?>/dist/images/jc-logo-white.png"></a>
+                                                                                   src="<?= get_stylesheet_directory_uri(); ?>/dist/images/jc-logo-white.png" title="JC-Logo" alt="Logo von Jan Christlieb"></a>
 
         <div class="collapse navbar-collapse navbar-toggleable-md" id="navbarSupportedContent">
             <?php
