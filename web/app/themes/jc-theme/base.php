@@ -45,6 +45,7 @@ wp_footer();
         data-divlinkbg="#f5c43d"
         data-cookie="CookieInfoScript"
         data-text-align="left"
+        data-zindex="999"
         data-close-text="OK"
         data-font-size="16px"
         data-font-family="sans-serif"

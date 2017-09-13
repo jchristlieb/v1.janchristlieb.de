@@ -23,7 +23,6 @@
   background-color: $main-color;
   border-radius: 10px 0 0 10px;
   width: 50px;
-  z-index: 9999;
   &:hover {
     width: 60px;
   }
@@ -38,6 +37,7 @@
 
 #qa-btn {
   bottom: 20px;
+  z-index: 899;
   &:after {
     font-family: FontAwesome;
     content: "\f05a";
@@ -48,6 +48,7 @@
 
 #toc-btn {
   bottom: 100px;
+  z-index: 899;
   display: none;
   &:after {
     font-family: FontAwesome;
