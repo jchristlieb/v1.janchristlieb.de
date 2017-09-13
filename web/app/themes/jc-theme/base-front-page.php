@@ -54,5 +54,19 @@ get_template_part('templates/header');
     get_template_part('templates/footer');
     wp_footer();
     ?>
+<script type="text/javascript" id="cookieinfo"
+        src="//cookieinfoscript.com/js/cookieinfo.min.js"
+        data-bg="#2e5c77"
+        data-fg="#FFFFFF"
+        data-link="#F1D600"
+        data-cookie="CookieInfoScript"
+        data-text-align="left"
+        data-close-text="OK"
+        data-font-size="16px"
+        data-font-family="sans-serif"
+        data-message="Ja, auch diese Seite nutzt Cookies. Durch Nutzung dieser Seite erklärst du dich damit einverstanden. Wieso, weshalb, warum? Mehr Infos findest du im"
+        data-linkmsg="Datenschutz."
+        data-moreinfo="https://janchristlieb.de/datenschutz">
+</script>
 </body>
 </html>
