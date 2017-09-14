@@ -8,6 +8,9 @@ footer {
     .fa {
       color: $text-color;
       font-size: 40px;
+      @media screen and (max-width: 499px) {
+      font-size: 15px;
+      }
       margin: 20px;
       &:hover {
         color: $highlight-color-lighter;
