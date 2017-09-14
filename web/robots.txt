@@ -4,8 +4,10 @@ User-agent: *
 Disallow: /wp-admin
 Disallow: /wp-includes
 Disallow: /wp-content
+Disallow: /datenschutz
+Disallow: /impressum
 Allow: /wp-content/uploads
-Allow: /wp-content/themes
+Allow: /wp-content/themes/jc-theme
 
 User-agent: Googlebot-Image
 Allow: /wp-content/uploads/
