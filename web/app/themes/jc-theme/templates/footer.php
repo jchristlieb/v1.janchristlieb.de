@@ -6,7 +6,7 @@
                     <li><a href="https://twitter.com/jchristlieb" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                     <li><a href="https://www.xing.com/profile/Jan_Christlieb" target="_blank"><i class="fa fa-xing" aria-hidden="true"></i></a></li>
                     <li><a href="https://de.linkedin.com/in/jchristlieb" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="https://github.com/hen-der-son" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/jchristlieb" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                     <li><a href="https://plus.google.com/+JanChristlieb" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
