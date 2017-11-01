@@ -58,7 +58,6 @@
                                             <img class="no-img-border img-fluid rounded" src="<?php echo $image; ?>"
                                                  alt="<?php echo $image_alt; ?>"
                                                  title="<?php echo $image_title; ?>"/>
-                                        <?php endif; ?>
                                     </div>
                                 </a>
                             </div>

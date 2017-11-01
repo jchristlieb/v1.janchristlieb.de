@@ -4,14 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "aff246443bfce8bac477115119846264",
+    "content-hash": "8994e0e5fcf1e002b682d8cdf25bc71a",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.5.14",
+            "version": "5.6.0",
             "dist": {
                 "type": "zip",
-                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.5.14",
+                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.6.0",
                 "reference": null,
                 "shasum": null
             },
@@ -130,20 +130,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.8.0",
+            "version": "4.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "24edf4daca6bc15ad3b78c5927468df487d47a37"
+                "reference": "d5bc0df53dd6e6e43082f47ccee89aab2049bc23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/24edf4daca6bc15ad3b78c5927468df487d47a37",
-                "reference": "24edf4daca6bc15ad3b78c5927468df487d47a37",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/d5bc0df53dd6e6e43082f47ccee89aab2049bc23",
+                "reference": "d5bc0df53dd6e6e43082f47ccee89aab2049bc23",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "4.8.0",
+                "johnpbloch/wordpress-core": "4.8.3",
                 "johnpbloch/wordpress-core-installer": "^1.0",
                 "php": ">=5.3.2"
             },
@@ -165,24 +165,27 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-06-08T15:12:19+00:00"
+            "time": "2017-10-31T16:40:07+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "4.8.0",
+            "version": "4.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "58f209dfd66f61c4398a47cf53e90d378abc25d7"
+                "reference": "949e279f9752b458d70288636a77d2b8f66801f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/58f209dfd66f61c4398a47cf53e90d378abc25d7",
-                "reference": "58f209dfd66f61c4398a47cf53e90d378abc25d7",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/949e279f9752b458d70288636a77d2b8f66801f6",
+                "reference": "949e279f9752b458d70288636a77d2b8f66801f6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
+            },
+            "provide": {
+                "wordpress/core-implementation": "4.8.3"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -202,7 +205,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-06-08T15:12:14+00:00"
+            "time": "2017-10-31T16:39:59+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -504,36 +507,16 @@
             "time": "2016-09-01T10:05:43+00:00"
         },
         {
-            "name": "wpackagist-plugin/bwp-google-xml-sitemaps",
-            "version": "1.4.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/bwp-google-xml-sitemaps/",
-                "reference": "tags/1.4.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/bwp-google-xml-sitemaps.1.4.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/bwp-google-xml-sitemaps/"
-        },
-        {
             "name": "wpackagist-plugin/contact-form-7",
-            "version": "4.9",
+            "version": "4.9.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/contact-form-7/",
-                "reference": "tags/4.9"
+                "reference": "tags/4.9.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.9.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.9.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -585,16 +568,16 @@
         },
         {
             "name": "wpackagist-plugin/regenerate-thumbnails",
-            "version": "2.2.6",
+            "version": "2.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/regenerate-thumbnails/",
-                "reference": "tags/2.2.6"
+                "reference": "tags/2.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
-                "reference": "tags/2.2.6",
+                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.3.1.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
