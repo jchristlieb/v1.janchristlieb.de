@@ -98,7 +98,7 @@
                 printGreeting(
                     'about',
                     '<h1 class="introduction">Hi, ich bin Jan</h1>' +
-                    '<p class="lead">Ich entwickel <a href="#teasers">Webseiten</a> und digitale <a href="#teasers">Marketing Strategien</a>. Interessiert? Dann sollten wir <a class="lets-talk" href="#contact">reden</a></p>',
+                    '<p class="lead">Willkommen auf meiner Webseite. Schau dich in Ruhe um. Falls du Fragen hast, freue ich mich über eine <a href="#contact">kurze Nachricht</a>.</p>',
                     50
                 );
 
