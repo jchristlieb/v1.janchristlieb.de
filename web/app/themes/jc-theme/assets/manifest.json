@@ -23,6 +23,6 @@
     }
   },
   "config": {
-    "devUrl": "http://jc.dev"
+    "devUrl": "http://jc.test"
   }
 }
